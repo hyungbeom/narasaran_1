@@ -11,7 +11,7 @@ export default function Footer() {
             style={{
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100vh',  // 헤더 등 제외한 전체 높이,
+                height: isMobile ? '' :'100dvh',  // 헤더 등 제외한 전체 높이,
                 backgroundColor : '#2D2D2D'
             }}
         >
@@ -57,16 +57,20 @@ export default function Footer() {
                 <div
                     style={{
                         display: 'flex',
-                        height: '100%',   // 컨테이너 높이에 맞춤
-                        width: 'auto',    // 비율 유지하며 자동 계산
-                        objectFit: 'cover', // 필요시 잘림 없이 꽉 채우기
-                        // display: 'block',   // img 밑 여백 제거
+                        paddingTop : 80,
+                        height: '100%',
+                        width: 'auto',
+                        objectFit: 'cover',
                     }}
                 >
                     <img
                         src="/poster.png"
                         alt="포스터"
-
+                        style={{
+                            height: 'calc(100% - 80px)',      // 부모 높이 − 40px
+                            width: 'auto',
+                            display: 'block',
+                        }}
                     />
                     <div style={{color: 'blue'}}>여기에 내용 넣어요?</div>
 

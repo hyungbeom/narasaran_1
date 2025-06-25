@@ -17,11 +17,11 @@ export default function Introduce() {
     };
 
     return (<>
-            <div style={{...style, height : isMobile ? 260 : (isDesktop ? 325 : 300)}}>
+            <div style={{...style, height : isMobile ? 230 : (isDesktop ? 325 : 300)}}>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
-                    <div style={{fontSize : isDesktop ?50 : 45, fontWeight : 800}}>행사소개</div>
-                    <div style={{paddingTop :isMobile ? 28 :  35, fontSize :isDesktop ? 20 : 17, lineHeight : 1.5}}>
+                    <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>프로그램소개</div>
+                    <div style={{paddingTop :isMobile ? 20 :  35, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
                         2025. 7. 12 SAT <br/>
                         광화문 광장 놀이마당 일대
                     </div>
@@ -35,10 +35,7 @@ export default function Introduce() {
                     어린이·청소년 나라사랑 아트페스티벌
                 </div>
             </div>
-            <div style={{...style, height : 100}}>
-
-            </div>
-            <div style={{ color: 'black', backgroundColor: 'white', padding: isMobile ? '30px 20px 200px 20px' : '60px 60px 200px 60px', lineHeight : 1.8, fontSize : isMobile ?  12 : (isDesktop ? 20 : 17)}}>
+            <div style={{ color: 'black', backgroundColor: 'white', padding: isMobile ? '0px 20px 200px 20px' : '0px 60px 200px 60px', lineHeight : 1.8, fontSize : isMobile ?  12 : (isDesktop ? 18 : 15)}}>
 
                 우리가 함께 그리는 대한민국의 기억<br/>
                 2025년은 대한민국 <span style={{fontWeight : 800}}>광복 80주년</span>을 맞이하는 뜻깊은 해입니다.<br/>서울시와 함께하는 <span style={{fontWeight : 800}}>‘나라사랑 아트페스티벌’</span>은 어린이와 청소년들이 예술을 통해 광복의 의미를 체험하고,<br/>나라를 위해 헌신한 독립운동가들의 정신을 되새기며 대한민국의 미래를 스스로 그려보는 자리입니다.<br/>

@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components';
 
 export const FullpageContainer = styled.div`
     //margin-top: 80px; /* 헤더 높이 만큼 밀어내기 */
-    height: calc(100vh);
+    height: calc(100dvh);
     width: 100%; /* 100vw는 스크롤바 때문에 가로 스크롤이 생길 수 있어요 */
     overflow-y: auto;
     scroll-snap-type: y mandatory;

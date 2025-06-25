@@ -138,7 +138,7 @@ export default function Header() {
                     style={{
                         position: 'fixed',
                         top: 0, left: 0,
-                        width: '100vw', height: '100vh',
+                        width: '100dvw', height: '100dvh',
                         backgroundColor: 'rgba(0, 0, 0, 0.5)',  // 반투명 검정
                         zIndex: 1399,
                         pointerEvents: 'auto',

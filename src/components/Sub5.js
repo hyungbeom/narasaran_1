@@ -13,8 +13,8 @@ export default function Sub5() {
         <div
             style={{
                 position: 'relative',
-                width: '100vw',
-                height: '100vh',
+                width: '100dvw',
+                height: '100dvh',
                 overflow: 'hidden',
 
             }}
