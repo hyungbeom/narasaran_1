@@ -12,7 +12,8 @@ IFS=$'\n\t'
 # ——————————————————————————————
 # 환경 설정 (자신의 환경에 맞게 수정)
 # ——————————————————————————————
-PROJECT_DIR="/path/to/your/react-project"    # React 프로젝트 루트
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$SCRIPT_DIR"
 GIT_BRANCH="main"                            # Pull 할 브랜치
 NGINX_ROOT="/usr/share/nginx/html"           # Nginx 서비스 정적 파일 경로
 LOG_FILE="/var/log/deploy-react.log"         # (선택) 로그 파일
