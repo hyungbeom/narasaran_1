@@ -2,7 +2,7 @@
 
 #================================================================
 # Script:   deploy-react.sh
-# Purpose:  Pull latest 코드, Build React app and restart Nginx
+# Purpose:  Pull latest 코드, Build React app with yarn and restart Nginx
 # Usage:    ./deploy-react.sh
 #================================================================
 
@@ -38,16 +38,16 @@ cd "$PROJECT_DIR"
 log "0.1. Git pull ($GIT_BRANCH 브랜치)"
 git fetch origin "$GIT_BRANCH"
 git checkout "$GIT_BRANCH"
-git pull origin "$GIT_BRANCH"
+git pull --rebase origin "$GIT_BRANCH"
 
 # ——————————————————————————————
-# 1. React 프로젝트 빌드
+# 1. React 프로젝트 빌드 (yarn)
 # ——————————————————————————————
-log "1. 의존성 설치 (npm install)"
-npm install
+log "1. 의존성 설치 (yarn install --frozen-lockfile)"
+yarn install --frozen-lockfile
 
-log "2. 빌드 실행 (npm run build)"
-npm run build
+log "2. 빌드 실행 (yarn build)"
+yarn build
 
 # ——————————————————————————————
 # 2. Nginx 정적 파일 업데이트
@@ -70,4 +70,4 @@ fi
 log "6. Nginx 서비스 재시작 ($NGINX_SERVICE)"
 sudo systemctl restart "$NGINX_SERVICE"
 
-log "✅ 배포 완료: Git pull → React 빌드 → Nginx 재시작 성공"
+log "✅ 배포 완료: Git pull → React 빌드(yarn) → Nginx 재시작 성공"
