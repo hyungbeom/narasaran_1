@@ -35,12 +35,8 @@ log() {
 log "0. React 프로젝트 디렉터리로 이동: $PROJECT_DIR"
 cd "$PROJECT_DIR"
 
-log "0.1. Git pull ($GIT_BRANCH 브랜치)"
-git fetch origin "$GIT_BRANCH"
-git checkout "$GIT_BRANCH"
-git pull --rebase origin "$GIT_BRANCH"
-
-# ——————————————————————————————
+log "0.1. Git pull (main 브랜치)"
+git pull origin main
 # 1. React 프로젝트 빌드 (yarn)
 # ——————————————————————————————
 log "1. 의존성 설치 (yarn install --frozen-lockfile)"
