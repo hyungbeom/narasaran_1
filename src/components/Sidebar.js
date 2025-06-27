@@ -51,6 +51,10 @@ export default function Sidebar({open, setOpen}) {
     };
 
     const handleSubClick = (link) => {
+        if (v.link === '/prepare') {
+            return alert('준비중입니다.')
+
+        }
         navigate(link);
         setOpen(false);
     };
