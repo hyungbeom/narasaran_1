@@ -109,10 +109,11 @@ export default function Main() {
                     setPopup(false)
                 }}
                 >
-                    <img src="/icon/Close.svg" alt=""/>
+                    <img src="https://sikaf.co.kr/icon/Close.svg" alt=""/>
                 </div>
                 <img
-                    src="/poster.png"
+                    width={500}
+                    src="https://sikaf.co.kr/poster.png"
                     alt=""
                 />
                 <div style={{
@@ -169,13 +170,13 @@ export default function Main() {
             {/*</FloatingButton>*/}
 
             <FloatingButton bottom={'70px'} bgColor={'#1D6FF2'} onClick={goToEmail}>
-                <FloatingIcon src="/Mail.svg" alt="카카오톡 문의"/>
+                <FloatingIcon src="https://sikaf.co.kr/Mail.svg" alt="카카오톡 문의"/>
                 <FloatingText>sikafofficial@gmail.com</FloatingText>
             </FloatingButton>
 
 
             <FloatingButton bottom={'20px'} bgColor={'#EB5F18'} onClick={goToInstagram}>
-                <FloatingIcon src="/Instagram.svg" alt="카카오톡 문의"/>
+                <FloatingIcon src="https://sikaf.co.kr/Instagram.svg" alt="카카오톡 문의"/>
                 <FloatingText>ID : SIAKF</FloatingText>
             </FloatingButton>
         </>

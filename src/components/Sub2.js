@@ -127,7 +127,7 @@ export default function Sub2() {
                     pointerEvents: 'none',
                 }}
             >
-                <img src={!mobile ? "/mouse.svg" : '/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
+                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
                 <div style={{ fontSize: 10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
                     <span> S W I P E <br/>D O W N</span>}</div>
                 <ScrollIndicator />

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import ScrollIndicator from './ScrollIndicator';
 import Footer from "./Footer";
+import Footers from "./Footers";
 
 // 1) 교체할 이미지 URL 리스트
 const IMAGES = [
@@ -37,20 +38,23 @@ export default function Sub3() {
     const [current, setCurrent] = useState(0);
 
 
-
     return (
         <div
             style={{
                 position: 'relative',
                 width: '100%',
-                // height: '100%',
+                height: '100%',
                 overflow: 'hidden',
             }}
         >
 
+            <div style={{height : 'calc(100dvh - 290px)'}}>
+                <div style={{paddingTop : 80}}>
+                    asdfas
+                </div>
+            </div>
 
-            <Footer/>
-
+            <Footers/>
         </div>
     );
 }

@@ -73,7 +73,7 @@ export default function Sidebar({open, setOpen}) {
             >
                 <span>MENU</span>
                 <img
-                    src="/icon/Close.svg"
+                    src="https://sikaf.co.kr/icon/Close.svg"
                     alt="닫기"
                     style={{cursor: 'pointer'}}
                     onClick={() => setOpen(false)}
@@ -99,8 +99,8 @@ export default function Sidebar({open, setOpen}) {
                         <span>{item.title}</span>
                         <span>
               {item.subMenu
-                  ? expandedIdx === idx ? <img src="/icon/arrow_up.svg" height={16} alt=""/> :
-                      <img src="/icon/arrow_down.svg" height={16} alt=""/>
+                  ? expandedIdx === idx ? <img src="https://sikaf.co.kr/icon/arrow_up.svg" height={16} alt=""/> :
+                      <img src="https://sikaf.co.kr/icon/arrow_down.svg" height={16} alt=""/>
                   : <></>}
             </span>
                     </div>

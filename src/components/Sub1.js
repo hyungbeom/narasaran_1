@@ -118,7 +118,7 @@ export default function Sub1() {
                 >
                     <img
                         width={isMobile ? 130 :(isDesktop ? 317 : 250)}
-                        src="/joinButton.png"
+                        src="https://sikaf.co.kr/joinButton.png"
                         alt="참가신청 버튼"
                         style={{ paddingTop: isDesktop ? 38 : 20, cursor: 'pointer' }}
                     />
@@ -140,7 +140,7 @@ export default function Sub1() {
                     pointerEvents: 'none',
                 }}
             >
-                <img src={!mobile ? "/mouse.svg" : '/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
+                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
                 <div style={{ fontSize: 10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
                     <span> S W I P E <br/>D O W N</span>}</div>
                 <ScrollIndicator />

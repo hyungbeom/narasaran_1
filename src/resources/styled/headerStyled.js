@@ -59,7 +59,7 @@ export const Underline = styled.div`
 
 
 export const Dropdown = styled.div`
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: 0;
     width: 100vw;

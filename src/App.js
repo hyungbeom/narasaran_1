@@ -4,8 +4,13 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Introduce from "./page/Introduce";
 import Schedule from "./page/Schedule";
-import Map from "./page/Map";
+import Maps from "./page/Maps";
 import Awards from "./page/Awards";
+import Photo from "./page/Guidelines";
+import Review from "./page/Review";
+import Qna from "./page/Qna";
+import Gallery from "./page/Gallery";
+import Exhibition from "./page/Exhibition";
 
 export default function App() {
     return (
@@ -19,8 +24,13 @@ export default function App() {
                 {/* 예시: 추가 페이지 */}
                 <Route path="/introduce/program" element={<Introduce />} />
                 <Route path="/introduce/schedule" element={<Schedule />} />
-                <Route path="/map" element={<Map />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/map" element={<Maps />} />
                 <Route path="/awards" element={<Awards />} />
+                <Route path="/exhibition" element={<Exhibition />} />
+                <Route path="/guidelines" element={<Photo />} />
+                <Route path="/review" element={<Review />} />
+                <Route path="/qna" element={<Qna />} />
 
                 {/* 정의되지 않은 경로일 때 */}
                 {/*<Route path="*" element={<NotFound />} />*/}
