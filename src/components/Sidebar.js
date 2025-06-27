@@ -15,22 +15,30 @@ export default function Sidebar({open, setOpen}) {
     const menuItems = [
         {title: 'Home', link: '/'},
         {
-            title: '행사소개&프로그램 안내',
+            title: 'SIKAF 소개',
             subMenu: [
                 {title: '프로그램 안내', link: '/introduce/program'},
                 {title: '일정안내', link: '/introduce/schedule'},
             ],
         },
-        {title: '오시는길', link: '/map'},
-        {title: '시상안내', link: '/awards'},
+        {title: '갤러리', link: '/gallery'},
+        {title: '장소', link: '/map'},
         {
-            title: '포토존&리뷰',
+            title: '공모전 안내',
             subMenu: [
-                {title: '포토존', link: '/photo/zone'},
-                {title: '리뷰', link: '/photo/review'},
+                {title: 'SIKAF 2025', link: '/exhibition'},
+                {title: '수상작 발표 2025', link: '/awards'},
             ],
         },
-        {title: '문의&Q&A', link: '/qna'},
+        {title: '모집요강', link: '/guidelines'},
+        {
+            title: '고객센터',
+            subMenu: [
+                {title: '공지사항', link: '/prepare'},
+                {title: '언론보도', link: '/prepare'},
+                {title: 'QAF', link: '/prepare'},
+            ],
+        },
     ];
 
     const handleClick = (item, idx) => {
