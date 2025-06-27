@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import ScrollIndicator from './ScrollIndicator';
 
 import Footers from "./Footers";
+import {useMediaQuery} from "react-responsive";
 
 // 1) 교체할 이미지 URL 리스트
 const IMAGES = [
@@ -35,6 +36,9 @@ const ZoomBackground = styled.div`
 `;
 
 export default function Sub3() {
+
+    const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 900px)' });
     const [current, setCurrent] = useState(0);
 
 
@@ -48,7 +52,7 @@ export default function Sub3() {
             }}
         >
 
-            <div style={{height : 'calc(100dvh - 290px)'}}>
+            <div style={{height : `calc(100dvh - ${isMobile ? 227 : 290}px)`}}>
                 <div style={{paddingTop : 80}}>
                     asdfas
                 </div>
