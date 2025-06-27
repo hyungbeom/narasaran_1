@@ -9,7 +9,7 @@ export default function Awards() {
 
 
     const style = {
-        backgroundImage: `url('/sub_image.jpg')`,
+        backgroundImage: `url('https://sikaf.co.kr//sub_image.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',

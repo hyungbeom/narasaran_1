@@ -9,7 +9,7 @@ export default function Schedule() {
 
 
     const style = {
-        backgroundImage: `url('/sub_image2.png')`,
+        backgroundImage: `url('https://sikaf.co.kr/sub_image2.png')`,
         backgroundSize: '100% auto',    // ← 너비 100%, 높이는 자동
         // backgroundSize: 'cover',
         backgroundPosition: 'top center',
