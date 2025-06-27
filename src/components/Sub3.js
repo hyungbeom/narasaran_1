@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import ScrollIndicator from './ScrollIndicator';
-import Footer from "./Footer";
+
 import Footers from "./Footers";
 
 // 1) 교체할 이미지 URL 리스트
