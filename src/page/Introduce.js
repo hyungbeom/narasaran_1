@@ -1,5 +1,6 @@
 import Footers from "../components/Footers";
 import {useMediaQuery} from "react-responsive";
+import subImage from "../resources/image/sub_Image.jpg";
 
 
 export default function Introduce() {
@@ -8,7 +9,7 @@ export default function Introduce() {
 
 
     const style = {
-        backgroundImage: `url('https://sikaf.co.kr/sub_image.jpg')`,
+        backgroundImage: `url(${subImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',

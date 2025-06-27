@@ -1,7 +1,7 @@
 import Footers from "../components/Footers";
 import {useMediaQuery} from "react-responsive";
 import GuideList from "../components/guideList";
-
+import subImage from "../resources/image/sub_Image.jpg";
 
 export default function Guidelines() {
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
@@ -9,7 +9,7 @@ export default function Guidelines() {
 
 
     const style = {
-        backgroundImage: `url('https://sikaf.co.kr//sub_image.jpg')`,
+        backgroundImage: `url(${subImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',

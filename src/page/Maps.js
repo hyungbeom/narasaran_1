@@ -2,6 +2,7 @@ import Footers from "../components/Footers";
 import {useMediaQuery} from "react-responsive";
 import {useEffect, useRef, useState} from "react";
 import { Map, MapMarker, useKakaoLoader } from 'react-kakao-maps-sdk';
+import subImage from "../resources/image/sub_Image.jpg";
 const busCategories = [
     {
         name: '광역버스',
@@ -74,7 +75,7 @@ export default function Maps() {
 
 
     const style = {
-        backgroundImage: `url('https://sikaf.co.kr//sub_image.jpg')`,
+        backgroundImage: `url(${subImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',
