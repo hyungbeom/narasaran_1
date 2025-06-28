@@ -13,7 +13,7 @@ export default function Observer({currentPage, pageCount, onDotClick}) {
             style={{
                 position: 'fixed',
                 top: '50%',
-                right: '50px',
+                right: isDesktop ? 50 : 20,
                 transform: 'translateY(-50%)',
                 display: 'flex',
                 flexDirection: 'column',

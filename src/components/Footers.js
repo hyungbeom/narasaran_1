@@ -24,16 +24,16 @@ export default function Footers() {
                     {/* INFO & CONTACT */}
                     <div>
                         <div style={{fontSize: 15, fontWeight: 800}}>INFO & CONTACT</div>
-                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 17}}>
+                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 17, gap : 3}}>
                             <img src="https://sikaf.co.kr/icon/Calendar.svg" alt="" width={20}/> 25년 7월 12일
                         </div>
-                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 5}}>
+                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 5, gap : 3}}>
                             <img src="https://sikaf.co.kr/icon/Delivery Time.svg" alt="" width={20}/> 12:00 - 17:00
                         </div>
-                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 17}}>
+                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 17, gap : 3}}>
                             <img src="https://sikaf.co.kr/icon/Address.svg" alt="" width={20}/> 광화문 광장 놀이마당 일대
                         </div>
-                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 5}}>
+                        <div style={{fontSize: 11, display: 'flex', alignItems: 'center', paddingTop: 5, gap : 3}}>
                             <img src="https://sikaf.co.kr/icon/Email.svg" alt="" width={20}/> sikafofficial
                         </div>
                         <div style={{
@@ -41,7 +41,7 @@ export default function Footers() {
                             display: 'flex',
                             alignItems: 'center',
                             paddingTop: 5,
-                            paddingBottom: 50
+                            paddingBottom: 50, gap : 3
                         }}>
                             <img src="https://sikaf.co.kr/icon/Instagram.svg" alt="" width={20}/> sikaf_official
                         </div>
@@ -57,13 +57,13 @@ export default function Footers() {
                 <div
                     style={{
 
-                        marginTop: -40,
+                        marginTop: -30,
                         paddingLeft: 10,
-                        fontSize: 10,
+                        fontSize: 8,
                         color: 'white',
                     }}
                 >
-                    All contents provided by SIKAF are copyrighted <br/>works protected by copyright law.
+                    All contents provided by SIKAF are copyrighted works protected by copyright law.
                     <br/>
                     © SIKAF. All rights reserved.
                 </div>
