@@ -101,13 +101,13 @@ export default function GuideList() {
                     <img
                         src={'https://sikaf.co.kr/logo.svg'}
                         alt="SIKAF 추진위원회"
-                        style={{ height: 40, marginRight: 8, verticalAlign: 'middle' }}
+                        style={{ height: isMobile ? 10 : 40, marginRight: 8, verticalAlign: 'middle' }}
                     />
                     <div style={{backgroundColor : 'black', padding : 10, borderRadius : 5}}>
                     <img
                         src={'https://sikaf.co.kr/bom.png'}
                         alt="비오앰"
-                        style={{ height: 40, verticalAlign: 'middle' }}
+                        style={{ height:isMobile ? 10 : 40, verticalAlign: 'middle' }}
                     />
                     </div>
                 </td>
