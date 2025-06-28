@@ -40,6 +40,10 @@ export default function Sub1() {
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
     const isDesktop = useMediaQuery({ query: '(min-width: 700px)' });
 
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+    const isLandscape = useMediaQuery({ query: '(orientation: landscape)' });
+
+
     const [current, setCurrent] = useState(0);
     const [mobile, setMobile] = useState(false);
 
@@ -63,14 +67,14 @@ export default function Sub1() {
         return () => clearInterval(timer);
     }, []);
 
+
+
     return (
         <div
             style={{
                 position: 'relative',
-                // width: '100%',
                 height: '100%',
                 overflow: 'hidden',
-                /* Flex 컨테이너로 만들어서 자식 세로 중앙 정렬 */
                 display: 'flex',
                 alignItems: 'center',
             }}
@@ -103,10 +107,10 @@ export default function Sub1() {
 
                 }}
             >
-                <div style={{ fontSize:  isMobile ? 25 : ( isDesktop ? 40 : 35 )   }}>광복 80주년 기념</div>
-                <div style={{ paddingTop: 10, fontSize: isMobile ? 33 : (isDesktop ? 70 : 60), width : '100%' }}>나라사랑 어린이.청소년</div>
-                <div style={{ fontSize: isMobile ? 33 : (isDesktop ? 70 : 60) }}>아트페스티벌</div>
-                <div style={{ fontSize:isMobile ? 15 : (isDesktop ? 25 : 20), paddingTop: isMobile ? 20 : 38 }}>
+                <div style={{  paddingTop :isLandscape && mobile ? 30 : 0,  fontSize: isLandscape && mobile ? 15 : (isMobile ? 25 : ( isDesktop ? 40 : 35 ))   }}>광복 80주년 기념</div>
+                <div style={{ paddingTop: 10, fontSize: isLandscape && mobile ? 25 :(isMobile ? 33 : (isDesktop ? 70 : 60)), width : '100%' }}>나라사랑 어린이.청소년</div>
+                <div style={{ fontSize: isLandscape && mobile ? 22 :(isMobile ? 33 : (isDesktop ? 70 : 60)) }}>아트페스티벌</div>
+                <div style={{ fontSize:isLandscape && mobile ? 15 :(isMobile ? 15 : (isDesktop ? 25 : 20)), paddingTop: isLandscape && mobile ? 10 :(isMobile ? 20 : 38) }}>
                     2025. 7. 12 토 12:00~17:00<br/>
                     광화문광장 놀이마당 앞
                 </div>
@@ -116,11 +120,12 @@ export default function Sub1() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <img
-                        width={isMobile ? 130 :(isDesktop ? 317 : 250)}
+                        width={isLandscape && mobile ? 100 :(isMobile ? 130 :(isDesktop ? 317 : 250))}
                         src="https://sikaf.co.kr/joinButton.png"
                         alt="참가신청 버튼"
-                        style={{ paddingTop: isDesktop ? 38 : 20, cursor: 'pointer' }}
+                        style={{ paddingTop: isLandscape && mobile ? 10:(isDesktop ? 38 : 20), cursor: 'pointer' }}
                     />
                 </a>
             </div>
@@ -129,7 +134,7 @@ export default function Sub1() {
             <div
                 style={{
                     position: 'absolute',
-                    bottom: '100px',
+                    bottom:isLandscape && mobile ? 60 : 100,
                     left: '50%',
                     transform: 'translateX(-50%)',
                     display: 'flex',
@@ -140,8 +145,8 @@ export default function Sub1() {
                     pointerEvents: 'none',
                 }}
             >
-                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
-                <div style={{ fontSize: 10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
+                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={isLandscape && mobile ? 20 :(!mobile ? 16 : 25)} alt="Scroll icon" />
+                <div style={{ fontSize: isLandscape && mobile ? 7 :  10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
                     <span> S W I P E <br/>D O W N</span>}</div>
                 <ScrollIndicator />
             </div>

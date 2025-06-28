@@ -37,6 +37,9 @@ export default function Sub2() {
 
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
     const isDesktop = useMediaQuery({ query: '(min-width: 700px)' });
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+    const isLandscape = useMediaQuery({ query: '(orientation: landscape)' });
+
 
 
     const [current, setCurrent] = useState(0);
@@ -93,19 +96,19 @@ export default function Sub2() {
 
                 }}
             >
-                <div style={{ fontSize: isMobile ? 22 : (isDesktop ? 42 : 38) }}>우리가 함께 그리는 대한민국의 기억</div>
-                <div style={{ fontSize: isMobile ? 22 : (isDesktop ? 30 : 27) }}>예술로 기억하고<br/> 참여로 미래를 여는 축제 </div>
-                {isMobile ? <></> : <div style={{paddingTop: 45, fontSize: (isDesktop ? 35 : 27)}}>
+                <div style={{ fontSize:  isLandscape && mobile? 15 : (isMobile ? 22 : (isDesktop ? 42 : 38)), paddingTop : isLandscape && mobile ? 30 : 0 }}>우리가 함께 그리는 대한민국의 기억</div>
+                <div style={{ fontSize:  isLandscape && mobile ? 15 :(isMobile ? 22 : (isDesktop ? 30 : 27)) }}>예술로 기억하고<br/> 참여로 미래를 여는 축제 </div>
+                {isMobile ? <></> : <div style={{paddingTop:  isLandscape && mobile ? 13 : 45, fontSize:  isLandscape && mobile ? 12 : ((isDesktop ? 35 : 27))}}>
                     2025년, 광복 80주년을 기념하여 열리는<br/>
                     나라사랑 어린이-청소년 아트페스티벌은<br/>
                     예술을 통해 대한민국의 역사와 정신을 되새기고,
                 </div>}
                 {isMobile ?
-                    <div style={{fontSize: 30, paddingTop: 65}}>
+                    <div style={{fontSize:  isLandscape && mobile ? 15 :30, paddingTop: 65}}>
                         아이들과 시민이 함께 <br/> 만들어가는  문화예술 <br/> 축제 입니다.
                     </div>
                     :
-                    <div style={{fontSize:  (isDesktop ? 50 : 45), paddingTop: 65}}>
+                    <div style={{fontSize:  isLandscape && mobile ? 20 : (isDesktop ? 50 : 45), paddingTop:  isLandscape && mobile ? 20 :65}}>
                     아이들과 시민이 함께 만들어가는 <br/> 문화예술 축제 입니다.
                 </div>}
 
@@ -116,7 +119,7 @@ export default function Sub2() {
             <div
                 style={{
                     position: 'absolute',
-                    bottom: '100px',
+                    bottom:isLandscape && mobile ? 60 : 100,
                     left: '50%',
                     transform: 'translateX(-50%)',
                     display: 'flex',
@@ -127,8 +130,8 @@ export default function Sub2() {
                     pointerEvents: 'none',
                 }}
             >
-                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={!mobile ? 16 : 25} alt="Scroll icon" />
-                <div style={{ fontSize: 10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
+                <img src={!mobile ? "https://sikaf.co.kr/mouse.svg" : 'https://sikaf.co.kr/icon/hand.svg'} width={isLandscape && mobile ? 20 :(!mobile ? 16 : 25)} alt="Scroll icon" />
+                <div style={{ fontSize: isLandscape && mobile ? 7 :  10, marginTop: 8 }}>{!mobile ? 'S C R O L L' :
                     <span> S W I P E <br/>D O W N</span>}</div>
                 <ScrollIndicator />
             </div>

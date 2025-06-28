@@ -64,7 +64,10 @@ export default function Sidebar({open, setOpen}) {
             style={{
                 position: 'fixed',
                 top: 0, right: 0,
-                width: 300, height: '100dvh',
+                width: 300,
+                height: '100dvh',
+                overflowY : 'auto',
+                WebkitOverflowScrolling : 'touch',
                 backgroundColor: 'white',
                 zIndex: 1400,
                 fontSize: 12, fontWeight: 800,
