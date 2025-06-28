@@ -1,51 +1,58 @@
 import React from 'react';
-import {useMediaQuery} from "react-responsive";
+import { useMediaQuery } from 'react-responsive';
+// 로고 파일 경로는 실제 프로젝트에 맞게 수정해주세요.
+// import logoSIKAF from '/path/to/logo-sikaf.png';
+// import logoBOM from '/path/to/logo-bom.png';
 
 export default function DateList() {
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
     const isDesktop = useMediaQuery({ query: '(min-width: 900px)' });
 
     const tableStyle = {
-        borderCollapse: 'collapse',
+        marginTop: 20,
         width: '100%',
-        fontSize : isMobile ?10 : (isDesktop ? 15 : 12)
+        borderCollapse: 'collapse',
+        fontSize: isMobile ? 10 : isDesktop ? 15 : 12,
     };
     const cellStyle = {
-        border: '1px solid lightgray',
-        padding: '8px',
+        border: '1px solid #e3e3e3',
+        padding: '15px',
+        borderLeft: 'none',
+        borderRight: 'none',
         verticalAlign: 'top',
+        textAlign: 'left',
+    };
+    const linkStyle = {
+        color: 'blue',
+        textDecoration: 'underline',
     };
     const listStyle = {
-        listStyleType: 'none',   // ← 불릿 제거
+        listStyleType: 'none',
         margin: 0,
         paddingLeft: '20px',
     };
 
     return (
         <table style={tableStyle}>
-            <thead>
-            <tr>
-                <th style={cellStyle}>활동</th>
-                <th style={cellStyle}>시간</th>
-                <th style={cellStyle}>세부내용</th>
-            </tr>
-            </thead>
             <tbody>
             <tr>
-                <td style={cellStyle}>사생대회</td>
+                <td style={{ ...cellStyle, fontWeight: 'bold' }}>사생대회</td>
                 <td style={cellStyle}>13:00~16:30</td>
                 <td style={cellStyle}>
                     <a
                         href="https://docs.google.com/forms/d/1FDjI8pcQH-wtZxeerKIrla7Z5c82RpK8B6Z0F8xB4F4/edit"
                         target="_blank"
                         rel="noopener noreferrer"
+                        style={linkStyle}
                     >
                         사전신청 링크 (Google Forms)
                     </a>
                 </td>
             </tr>
             <tr>
-                <td style={cellStyle}>나라사랑 전통놀이 체험 부스</td>
+                <td style={{ ...cellStyle, fontWeight: 'bold' }}>
+                    나라사랑 전통놀이 체험부스
+                </td>
                 <td style={cellStyle}>10:00~17:00</td>
                 <td style={cellStyle}>
                     <ul style={listStyle}>
@@ -58,7 +65,9 @@ export default function DateList() {
                 </td>
             </tr>
             <tr>
-                <td style={cellStyle}>나라사랑 아트 체험 부스</td>
+                <td style={{ ...cellStyle, fontWeight: 'bold' }}>
+                    나라사랑 아트 체험 부스
+                </td>
                 <td style={cellStyle}>10:00~17:00</td>
                 <td style={cellStyle}>
                     <ul style={listStyle}>
@@ -71,7 +80,9 @@ export default function DateList() {
                 </td>
             </tr>
             <tr>
-                <td style={cellStyle}>광복 80주년 기념 즉석 포토존</td>
+                <td style={{ ...cellStyle, fontWeight: 'bold' }}>
+                    광복 80주년 기념즉석 포토존
+                </td>
                 <td style={cellStyle}>10:00~17:00</td>
                 <td style={cellStyle}>
                     광화문광장에서 특별한 하루를 사진으로 간직하세요.
