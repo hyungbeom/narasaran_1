@@ -115,7 +115,7 @@ export default function Footers() {
                     </div>
 
                     <div style={{color : 'white'}}>
-                        asdfklajsf
+
                     </div>
 
                     <div/>
