@@ -87,21 +87,21 @@ export default function Sub3() {
                                 주최
                             </div>
 
-                            <img src="/logo.svg" height={!isDesktop ? 30 : 50} alt=""/>
+                            <img src="https://sikaf.co.kr/logo.svg" height={!isDesktop ? 30 : 50} alt=""/>
                         </div>
 
                         <div style={{display : 'flex', alignItems : 'center', gap : !isDesktop ? 20 : 30}}>
                             <div>
                                 주관
                             </div>
-                            <img src="/bom.png" height={!isDesktop ? 30 : 50} alt=""/>
+                            <img src="https://sikaf.co.kr/bom.png" height={!isDesktop ? 30 : 50} alt=""/>
 
                         </div>
                         <div style={{display : 'flex', alignItems : 'center', gap : !isDesktop ? 20 : 30}}>
                             <div>
                                 후원
                             </div>
-                            <img src="/seoul.svg" height={isMobile ? 30 : 50} alt=""/>
+                            <img src="https://sikaf.co.kr/seoul.svg" height={isMobile ? 30 : 50} alt=""/>
                         </div>
 
                     </div>
