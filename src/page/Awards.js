@@ -18,17 +18,16 @@ export default function Awards() {
     };
 
     return (<>
-            <div style={{...style, height: isMobile ? 230 : (isDesktop ? 325 : 300)}}>
+            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 325 : 300)}}>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>수상작발표</div>
                     <div style={{
-                        paddingTop: isMobile ? 20 : 35,
+                        paddingTop: isMobile ? 10 : 35,
                         fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
                     }}>
-                        2025. 7. 12 SAT <br/>
-                        광화문 광장 놀이마당 일대
+                        2025. 7. 12 SAT | 광화문 광장 놀이마당 일대
                     </div>
                 </div>
             </div>
@@ -36,37 +35,39 @@ export default function Awards() {
                 textAlign: 'center',
                 color: 'black',
                 backgroundColor: 'white',
-                padding: isMobile ? '30px 20px 35px 20px' : '60px 60px 35px 60px'
+                padding: isMobile ? '30px 0px 35px 0px' : '60px 60px 35px 60px'
             }}>
 
 
                 <div style={{fontWeight: 'bold', lineHeight: 1.5}}>
-                    <div style={{fontSize: 35}}>2025 서울국제어린이청소년아트페어 미술공모전</div>
-                    <div>SEOUL INTERNATIONAL KIDS ART FAIR</div>
+                    <div style={{fontSize: isMobile ? 16 : 35}}>2025 서울국제어린이청소년아트페어 미술공모전</div>
+                    <div style={{fontSize : isMobile ? 12 : ''}} >SEOUL INTERNATIONAL KIDS ART FAIR</div>
                 </div>
 
                 <div
                     style={{
-                        margin: '0px auto',
+                        margin: '50px auto 0px auto',
                         display: 'grid',
-                        paddingTop: 50,
-                        gridTemplateColumns: '80px 1fr',  // 두 번째 칸을 1fr로 바꿔도 좋습니다
-                        width: 800,
+                        paddingTop: 0,
+
+                        gridTemplateColumns: isMobile ? '40px 1fr' : '80px 1fr',  // 두 번째 칸을 1fr로 바꿔도 좋습니다
+                        width: isMobile ? '90%' :  800,
                         justifyContent: "center",
                         alignItems: 'center',
-                        gap: 20
+                        gap: isMobile ? 10 : 20,
+
                     }}
                 >
-                    <div style={{fontSize : 18, fontWeight : 700}}>이름</div>
+                    <div style={{fontSize : isMobile ? 13 :18, fontWeight : 700}}>이름</div>
                     <div>
                         <Input
-                            size={'large'}
+                            size={isMobile ? 'middle' : 'large'}
                             placeHolder={'이름을 입력해주세요'}
-                            style={{flex: 1, boxSizing: 'border-box'}}
+                            style={{flex: 1, boxSizing: 'border-box', fontSize : isMobile ? 13 :18}}
                         />
                     </div>
 
-                    <div style={{fontSize : 18, fontWeight : 700}}>연락처</div>
+                    <div style={{fontSize : isMobile ? 13 :18, fontWeight : 700}}>연락처</div>
                     <div
                         style={{
                             display: 'flex',
@@ -75,17 +76,17 @@ export default function Awards() {
                         }}
                     >
                         <Input
-                            size={'large'}
+                            size={isMobile ? 'middle' : 'large'}
                             placeHolder={'010'}
-                            style={{flex: 1, boxSizing: 'border-box'}}
+                            style={{flex: 1, boxSizing: 'border-box',  fontSize : isMobile ? 13 :18}}
                         />
                         <Input
-                            size={'large'}
-                            style={{flex: 1, boxSizing: 'border-box'}}
+                            size={isMobile ? 'middle' : 'large'}
+                            style={{flex: 1, boxSizing: 'border-box',  fontSize : isMobile ? 13 :18}}
                         />
                         <Input
-                            size={'large'}
-                            style={{flex: 1, boxSizing: 'border-box'}}
+                            size={isMobile ? 'middle' : 'large'}
+                            style={{flex: 1, boxSizing: 'border-box',  fontSize : isMobile ? 13 :18}}
                         />
                     </div>
                 </div>

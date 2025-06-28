@@ -1,7 +1,11 @@
 import {useState} from "react";
+import {useMediaQuery} from "react-responsive";
 
 export default function ZoomImage({ src, v }) {
     const [hover, setHover] = useState(false);
+
+    const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 900px)' });
 
     return (
         <div
@@ -11,10 +15,10 @@ export default function ZoomImage({ src, v }) {
             style={{
                 position: 'relative',    // ↖️ 자식의 absolute 기준
                 cursor: 'pointer',
-                width: 300,
+                width: isMobile ? '100%' : 300,
                 height: 300,
                 border: '1px solid lightgray',
-                borderRadius: 7,
+                borderRadius: isMobile ? 0 : 7,
                 overflow: 'hidden',      // ↖️ 자식이 넘치면 잘라내기
             }}
         >
