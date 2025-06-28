@@ -64,7 +64,7 @@ export default function Sub3() {
                         backgroundColor : 'black',
                         width : '100vw',
                         flexWrap: 'wrap',
-                        padding : !isDesktop ? 40 : 80,
+                        padding : !isDesktop ? 50 : 80,
 
                         color : 'white',
 

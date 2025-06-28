@@ -47,18 +47,7 @@ export default function Footers() {
                         </div>
                     </div>
 
-                    {/* 주최·주관·후원 로고 */}
-                    <div style={{fontSize: 11, paddingTop: 45}}>
-                        <div style={{display: 'flex', alignItems: 'center', gap: 20}}>
-                            주최 <img src="https://sikaf.co.kr/logo.png" alt="주최 로고" width={100}/>
-                        </div>
-                        <div style={{display: 'flex', alignItems: 'center', gap: 20, paddingTop: 10}}>
-                            주관 <img src="/bom.png" alt="주관 로고" width={100}/>
-                        </div>
-                        <div style={{display: 'flex', alignItems: 'center', gap: 20, paddingTop: 10}}>
-                            후원 <img src="https://sikaf.co.kr/seoul.png" alt="후원 로고" width={100}/>
-                        </div>
-                    </div>
+
 
                     {/* 빈 공간 */}
                     <div/>
