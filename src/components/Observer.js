@@ -2,7 +2,7 @@ import React from 'react';
 import {useMediaQuery} from "react-responsive";
 
 
-const sectionList = ['MAIN', 'INTRODUCE',  'SPONSOR']
+const sectionList = ['MAIN', 'INTRODUCE',  'PRODUCT BY']
 
 export default function Observer({currentPage, pageCount, onDotClick}) {
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });

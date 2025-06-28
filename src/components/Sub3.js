@@ -1,6 +1,6 @@
 // Sub1.jsx
-import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
+import React, {useState, useEffect} from 'react';
+import styled, {keyframes} from 'styled-components';
 import ScrollIndicator from './ScrollIndicator';
 
 import Footers from "./Footers";
@@ -14,31 +14,31 @@ const IMAGES = [
 
 // 2) zoom 애니메이션: 1.2배 → 1배
 const zoomAnim = keyframes`
-  from {
-    transform: scale(1.5);
-  }
-  to {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
 `;
 
 // 3) 매번 리마운트되며 애니메이션 재생되는 배경 컴포넌트
 const ZoomBackground = styled.div`
-  position: absolute;
-  inset: 0;
-  background-image: url(${props => props.image});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    background-image: url(${props => props.image});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  /* 교체될 때마다 zoomAnim 1s 재생 */
-  animation: ${zoomAnim} 1s ease-out;
+    /* 교체될 때마다 zoomAnim 1s 재생 */
+    animation: ${zoomAnim} 1s ease-out;
 `;
 
 export default function Sub3() {
 
-    const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
-    const isDesktop = useMediaQuery({ query: '(min-width: 900px)' });
+    const isMobile = useMediaQuery({query: '(max-width: 500px)'});
+    const isDesktop = useMediaQuery({query: '(min-width: 900px)'});
     const [current, setCurrent] = useState(0);
 
 
@@ -52,12 +52,61 @@ export default function Sub3() {
             }}
         >
 
-            <div style={{height : `calc(100dvh - ${isMobile ? 227 : 290}px)`}}>
-                <div style={{paddingTop : 80}}>
-                    asdfas
+            <div style={{height: `calc(100dvh - ${isMobile ? 227 : 290}px)`}}>
+                <div style={{display : 'flex', alignItems : 'center',   height: '100%', justifyContent : 'center',flexWrap: 'wrap'}}>
+
+
+                    <div style={{
+                        // paddingTop: 80,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        backgroundColor : 'black',
+                        width : '100vw',
+                        flexWrap: 'wrap',
+                        padding : !isDesktop ? 40 : 80,
+
+                        color : 'white',
+
+                        gap: !isDesktop ? 30 :  80,
+                        fontSize: !isDesktop ? 12 : 30,
+                        fontWeight: 800,
+
+                    }}>
+
+
+                        <div style={{
+                            textAlign : 'center',
+                            width : '100%',
+                            fontSize : 25
+                        }}>
+                            PRODUCT BY
+                        </div>
+                        <div style={{display : 'flex', alignItems : 'center', gap :!isDesktop ? 20 :  30}}>
+                            <div>
+                                주최
+                            </div>
+
+                            <img src="/logo.svg" height={!isDesktop ? 30 : 50} alt=""/>
+                        </div>
+
+                        <div style={{display : 'flex', alignItems : 'center', gap : !isDesktop ? 20 : 30}}>
+                            <div>
+                                주관
+                            </div>
+                            <img src="/bom.png" height={!isDesktop ? 30 : 50} alt=""/>
+
+                        </div>
+                        <div style={{display : 'flex', alignItems : 'center', gap : !isDesktop ? 20 : 30}}>
+                            <div>
+                                후원
+                            </div>
+                            <img src="/seoul.svg" height={isMobile ? 30 : 50} alt=""/>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
             <Footers/>
         </div>
     );
