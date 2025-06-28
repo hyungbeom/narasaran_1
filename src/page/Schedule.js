@@ -19,12 +19,12 @@ export default function Schedule() {
     };
 
     return (<>
-            <div style={{...style, height : isMobile ? 230 : (isDesktop ? 325 : 300)}}>
+            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 280 : 300)}}>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>일정안내</div>
-                    <div style={{paddingTop :isMobile ? 20 :  35, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
-                        2025. 7. 12 SAT <br/>
+                    <div style={{paddingTop :isMobile ? 10 :  35, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
+                        2025. 7. 12 SAT
                         광화문 광장 놀이마당 일대
                     </div>
                 </div>
