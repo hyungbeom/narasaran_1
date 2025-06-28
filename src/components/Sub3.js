@@ -75,7 +75,7 @@ export default function Sub3() {
 
                 <div
                     style={{
-                        height: `calc(100dvh - ${isMobile ? 227 : 290}px)`,
+                        height: `calc(100dvh - ${isLandscape && mobileDevice ? 150 :(isMobile ? 227 : 290)}px)`,
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
