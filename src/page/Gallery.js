@@ -35,7 +35,7 @@ export default function Gallery() {
 
             <div style={{ maxWidth : 1390,margin : '0px auto', color: 'black', padding:isMobile ?'30px 0px 35px 0px' : '30px 100px 35px 100px'}}>
 
-                <div style={{textAlign : 'left', paddingTop : 20, paddingLeft : 5}}>
+                <div style={{textAlign : 'left', paddingTop : 20, paddingLeft : 5, fontSize : isMobile ? 12 : 15}}>
                     <span style={{fontWeight : 'bold'}}>작품 수</span> : 12개
                 </div>
 

@@ -65,7 +65,7 @@ export default function Header() {
                 paddingTop: isMobile ? 10 : 0,
                 display: 'flex',
                 height: isMobile ? 60 : 80,
-                backgroundColor: isMobile ? '' : 'white'
+                backgroundColor: isMobile ? 'black' : 'white'
             }}>
                 {/* — 로고 & 타이틀 */}
                 <div style={{
