@@ -105,7 +105,7 @@ export default function Sub3() {
                                 paddingTop: isLandscape && mobileDevice ? 30 : 0,
                             }}
                         >
-                            PRODUCT BY
+                            {/*PRODUCT BY*/}
                         </div>
 
                         <div

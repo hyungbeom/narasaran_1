@@ -27,7 +27,7 @@ export default function Awards() {
                         fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
                     }}>
-                        2025. 7. 12 SAT | 광화문 광장 놀이마당 일대
+                        2025. 7. 12 SAT | 광화문 광장 놀이마당 일대(세종대왕상 앞)
                     </div>
                 </div>
             </div>

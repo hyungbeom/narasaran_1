@@ -77,8 +77,7 @@ export default function Sub1() {
                 overflow: 'hidden',
                 display: 'flex',
                 alignItems: 'center',
-            }}
-        >
+            }}>
             {/* 5) key를 current로 주면 이미지 교체 때마다 리마운트 */}
             <ZoomBackground key={current} image={IMAGES[current]} />
 

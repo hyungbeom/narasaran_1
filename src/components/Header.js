@@ -13,14 +13,13 @@ import {useMediaQuery} from "react-responsive";
 import Sidebar from "./Sidebar";
 
 
-const MENUS = ['SIKAF 소개', '갤러리', '장소', '공모전 안내', '공모전 신청', '고객센터'];
+const MENUS = ['SIKAF 소개',  '공모전 안내', '공모전 신청', '갤러리','고객센터'];
 const SUBMENU = [
     [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '일정안내', link: '/introduce/schedule'}],
-    [{title: '갤러리', link: '/gallery'}],
-    [{title: '오시는길', link: '/map'}],
-    [{title: 'SIKAF 2025', link: '/exhibition'}, {title: '수상작 발표 2025', link: '/awards'}],
+    [{title: 'SIKAF 2025', link: '/exhibition'}, {title: '수상작 발표 2025', link: '/awards'},{title: '오시는길', link: '/map'}],
     [{title: '모집요강', link: '/guidelines'}],
-    [{title: '공지사항', link: '/prepare'}, {title: '언론보도', link: '/prepare'}, {title: 'QAF', link: '/prepare'}]
+    [{title: '갤러리', link: '/gallery'}],
+    [{title: '공지사항', link: '/prepare'}, {title: '언론보도', link: '/prepare'}, {title: 'Q&A', link: '/prepare'}]
 ];
 
 export default function Header() {
@@ -83,10 +82,10 @@ export default function Header() {
                     <span style={{fontSize: 11, fontWeight: 700, marginLeft: 8, color: isMobile ? 'white' : 'black'}}>
 
                         <div>
-                            서울국제청소년아트페어2025
+                            서울국제어린이청소년아트페어
                         </div>
                         <div style={{fontSize: 9}}>
-                           SEOUL INTERNATIONAL KIDS ART FAIR
+                           SEOUL INTERNATIONAL KIDS & TEENAGER
                         </div>
                    </span>
                 </div>
