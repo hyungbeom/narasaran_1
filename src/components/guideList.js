@@ -105,7 +105,7 @@ export default function GuideList() {
                     />
                     <div style={{backgroundColor : 'black', padding : 10, borderRadius : 5}}>
                     <img
-                        src={'https://sikaf.co.kr/bom.png'}
+                        src={'https://sikaf.co.kr/icon/bom2.png'}
                         alt="비오앰"
                         style={{ height:isMobile ? 10 : 40, verticalAlign: 'middle' }}
                     />
