@@ -91,7 +91,7 @@ export default function Footers() {
                                     paddingTop: 5,
                                     paddingBottom: 50, gap: 3
                                 }}>
-                                    <span style={{fontWeight : 700}}>이메일 :</span> BOM@BOMBOMBOM.co.kr
+                                    <span style={{fontWeight : 700}}>이메일 :</span>  준비중
                                 </div>
 
                             </div>
