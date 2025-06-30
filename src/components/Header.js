@@ -15,11 +15,11 @@ import Sidebar from "./Sidebar";
 
 const MENUS = [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '공모전 신청', link: '/exhibition'}, {title: '공모전 안내', link:'/guidelines'}, {title: '갤러리', link:'/gallery'},{title: '고객센터', link:'/prepare'},];
 const SUBMENU = [
-    [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '일정안내', link: '/introduce/schedule'}],
-    [{title: 'SIKAF 2025', link: '/exhibition'}, {title: '수상작 발표 2025', link: '/awards'},{title: '오시는길', link: '/map'}],
-    [{title: '모집요강', link: '/guidelines'}],
-    [{title: '갤러리', link: '/gallery'}],
-    [{title: '공지사항', link: '/prepare'}, {title: '언론보도', link: '/prepare'}, {title: 'Q&A', link: '/prepare'}]
+    [{title: 'SIKAF 소개', link: '/introduce/program', depth : 0}, {title: '일정안내', link: '/introduce/schedule', depth : 0}],
+    [{title: 'SIKAF 2025', link: '/exhibition', depth : 1}, {title: '수상작 발표 2025', link: '/awards', depth : 1},{title: '오시는길', link: '/map', depth : 1}],
+    [{title: '모집요강', link: '/guidelines', depth : 2}],
+    [{title: '갤러리', link: '/gallery', depth : 3}],
+    [{title: '공지사항', link: '/prepare', depth : 4}, {title: '언론보도', link: '/prepare', depth : 4}, {title: 'Q&A', link: '/prepare', depth : 4}]
 ];
 
 export default function Header() {
@@ -148,10 +148,11 @@ export default function Header() {
                             {col.map(v => (
                                 <div key={v.title}
                                      onClick={() => {
-                                         setHoverIdx(null)
+                                         setHoverIdx(null);
                                          if (v.link === '/prepare') {
                                              return alert('준비중입니다.')
                                          }
+                                         setActiveIdx(v.depth)
                                          navigate(v.link);
                                      }}
                                 >{v.title}</div>
