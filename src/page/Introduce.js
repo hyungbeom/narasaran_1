@@ -18,8 +18,8 @@ export default function Introduce() {
     };
 
     return (<>
-            <div style={{ height : isMobile ? 190 : (isDesktop ? 280 : 300), display : 'flex'}}>
-                <div style={{paddingTop:isMobile ? 80 : 50, display : 'flex', alignItems : 'center'}}>
+            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+                <div style={{paddingTop:isMobile ? 0 : 0, display : 'flex', alignItems : 'center'}}>
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>

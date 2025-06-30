@@ -21,14 +21,14 @@ export default function Gallery() {
     };
 
     return (<>
-            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div style={{...style, height : isMobile ? 140 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
                 <div>
                     <img src="/charactor4.svg" width={isMobile ? 60 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
 
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>갤러리</div>
-                    <div style={{paddingTop :isMobile ? 10 :  35, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
+                    <div style={{paddingTop :isMobile ? 10 :  35, fontSize : isMobile ? 12 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
                         {/*하단 타이틀 멘트없나용? <br/>*/}
                         작은 터치가 만든 큰 이야기
                     </div>

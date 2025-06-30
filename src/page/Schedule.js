@@ -10,7 +10,7 @@ export default function Schedule() {
     // wrapper: position relative 로 컨테이너 설정
     const wrapperStyle = {
         position: "relative",
-        height: isMobile ? 190 : isDesktop ? 280 : 300,
+        height: isMobile ? 200 : isDesktop ? 280 : 300,
         overflow: "hidden",
     };
 
@@ -43,7 +43,7 @@ export default function Schedule() {
                 <div style={contentStyle}>
                     <div style={{display : 'flex', alignItems : 'center'}}>
                         {/* 이 img 는 밝기 필터 영향을 받지 않음 */}
-                        <img src="/charactor1.svg" width={isMobile ? 80 : 150} style={{paddingBottom : 15}} alt="Character" />
+                        <img src="/charactor1.svg" width={isMobile ? 90 : 150} style={{paddingBottom : 15, paddingLeft : 20}} alt="Character" />
                     </div>
                     <div style={{ padding: isMobile ? "100px 20px" : "130px 60px", color : 'white' }}>
                         <div

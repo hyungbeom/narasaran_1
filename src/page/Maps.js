@@ -89,7 +89,7 @@ export default function Maps() {
     }, [mapView])
 
     return (<>
-            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div style={{...style, height: isMobile ? 140 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
                 <div>
                     <img src="/charactor2.svg" width={isMobile ? 80 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
                 </div>
@@ -98,11 +98,11 @@ export default function Maps() {
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>오시는길</div>
                     <div style={{
                         paddingTop: isMobile ? 10 : 35,
-                        fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
+                        fontSize: isMobile ? 12 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
                     }}>
-                        2025. 7. 12 SAT |
-                        광화문 광장 놀이마당 일대
+                        {isMobile ? <> 2025. 7. 12 SAT <br/> 광화문 광장 놀이마당 일대(세종대왕상
+                            앞)</> : '2025. 7. 12 SAT  광화문 광장 놀이마당 일대(세종대왕상 앞)'}
                     </div>
                 </div>
             </div>
@@ -248,7 +248,7 @@ export default function Maps() {
 
 
 
-                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: '/icon/marker.png', size : {width : 60, height : 60}}}>
+                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: 'https://sikaf.co.kr/icon/marker.svg', size : {width : 100, height : 70}}}>
                                         {/*<div style={{ textAlign: 'center' }}>광화문 광장 놀이마당</div>*/}
                                     </MapMarker>
                                 </Map>

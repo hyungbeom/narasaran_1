@@ -19,7 +19,7 @@ export default function Awards() {
     };
 
     return (<>
-            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop :isDesktop ? 80 : 70}}>
+            <div style={{...style, height: isMobile ? 140 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop :isDesktop ? 80 : 70}}>
                 <div>
                     <img src="/charactor2.svg" width={isMobile ? 80 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
                 </div>
@@ -28,10 +28,11 @@ export default function Awards() {
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>수상작발표</div>
                     <div style={{
                         paddingTop: isMobile ? 10 : 35,
-                        fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
+                        fontSize: isMobile ? 12 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
                     }}>
-                        2025. 7. 12 SAT | 광화문 광장 놀이마당 일대(세종대왕상 앞)
+                        {isMobile ? <> 2025. 7. 12 SAT <br/> 광화문 광장 놀이마당 일대(세종대왕상
+                            앞)</> : '2025. 7. 12 SAT  광화문 광장 놀이마당 일대(세종대왕상 앞)'}
                     </div>
                 </div>
             </div>
