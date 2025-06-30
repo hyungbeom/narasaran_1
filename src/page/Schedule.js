@@ -45,7 +45,7 @@ export default function Schedule() {
                         {/* 이 img 는 밝기 필터 영향을 받지 않음 */}
                         <img src="/charactor1.svg" width={isMobile ? 80 : 150} style={{paddingBottom : 15}} alt="Character" />
                     </div>
-                    <div style={{ padding: isMobile ? "100px 20px" : "130px 60px" }}>
+                    <div style={{ padding: isMobile ? "100px 20px" : "130px 60px", color : 'white' }}>
                         <div
                             style={{
                                 fontSize: isMobile ? 35 : isDesktop ? 50 : 45,
