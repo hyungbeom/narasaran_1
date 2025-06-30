@@ -73,7 +73,7 @@ export default function Footers() {
                                     paddingTop: 5,
                                     gap: 3
                                 }}>
-                                    <span style={{fontWeight : 700}}>사업자등록번호 :</span> ??????????
+                                    <span style={{fontWeight : 700}}>사업자등록번호 :</span> 	469-86-01008
                                 </div>
                                 <div style={{
                                     fontSize: 11,
