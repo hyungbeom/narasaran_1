@@ -242,7 +242,9 @@ export default function Maps() {
                                         controlsAdded.current = true;  // ← 다시 안 추가하도록 플래그 설정
                                     }}
                                 >
-                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: '/marker.svg', size : {width : 100, height : 70}}}>
+
+
+                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: 'https://sikaf.co.kr/marker.svg', size : {width : 100, height : 70}}}>
                                         {/*<div style={{ textAlign: 'center' }}>광화문 광장 놀이마당</div>*/}
                                     </MapMarker>
                                 </Map>
