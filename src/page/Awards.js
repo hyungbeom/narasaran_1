@@ -3,6 +3,7 @@ import {useMediaQuery} from "react-responsive";
 import {Button, Input, message} from "antd";
 
 import subImage from '../resources/image/sub_Image.jpg';
+import React from "react";
 export default function Awards() {
     const isMobile = useMediaQuery({query: '(max-width: 500px)'});
     const isDesktop = useMediaQuery({query: '(min-width: 900px)'});
@@ -18,7 +19,10 @@ export default function Awards() {
     };
 
     return (<>
-            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 325 : 300)}}>
+            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop :isDesktop ? 80 : 70}}>
+                <div>
+                    <img src="/charactor2.svg" width={isMobile ? 80 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
+                </div>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>수상작발표</div>

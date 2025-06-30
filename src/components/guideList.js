@@ -98,12 +98,15 @@ export default function GuideList() {
             <tr>
                 <td style={{...thTdStyle, paddingTop : 35, fontWeight : 'bold'}}>주최/주관</td>
                 <td style={{...thTdStyle, display : 'flex', alignItems : 'center', gap : 20}}>
-                    <img
-                        src={'https://sikaf.co.kr/logo.svg'}
-                        alt="SIKAF 추진위원회"
-                        style={{ height: isMobile ? 10 : 40, marginRight: 8, verticalAlign: 'middle' }}
-                    />
-                    <div style={{backgroundColor : 'black', padding : 10, borderRadius : 5}}>
+                    <div>
+                        <img
+                            src={'https://sikaf.co.kr/logo.svg'}
+                            alt="SIKAF 추진위원회"
+                            style={{ height: isMobile ? 10 : 40, }}
+                        />
+                        <span style={{fontWeight : 700}}>추진위원회</span>
+                    </div>
+                    <div style={{ padding : 10, borderRadius : 5}}>
                     <img
                         src={'https://sikaf.co.kr/icon/bom2.png'}
                         alt="비오앰"

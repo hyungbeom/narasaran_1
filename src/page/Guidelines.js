@@ -2,6 +2,7 @@ import Footers from "../components/Footers";
 import {useMediaQuery} from "react-responsive";
 import GuideList from "../components/guideList";
 import subImage from "../resources/image/sub_Image.jpg";
+import React from "react";
 
 export default function Guidelines() {
     const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
@@ -18,7 +19,10 @@ export default function Guidelines() {
     };
 
     return (<>
-            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 325 : 300)}}>
+            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+                <div>
+                    <img src="/charactor3.svg" width={isMobile ? 100 : 150} style={{paddingBottom : 15, paddingLeft :isMobile ? 10 :  30}} alt="Character" />
+                </div>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>모집요강</div>

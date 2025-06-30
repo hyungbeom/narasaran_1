@@ -19,9 +19,9 @@ export default function Exhibition() {
     };
 
     return (<>
-            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 200 : 300), display : 'flex', alignItems : 'center', marginTop : 70}}>
+            <div style={{...style, height: isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
                 <div>
-                    <img src="/charactor1.svg" width={isMobile ? 80 : 150} style={{paddingBottom : 15}} alt="Character" />
+                    <img src="/charactor2.svg" width={isMobile ? 80 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>공모전 안내</div>

@@ -1,6 +1,6 @@
 import Footers from "../components/Footers";
 import {useMediaQuery} from "react-responsive";
-import {useState} from "react";
+import React, {useState} from "react";
 import ZoomImage from "../components/ZoomImage";
 import Search from "antd/es/input/Search";
 import {Pagination} from "antd";
@@ -21,7 +21,10 @@ export default function Gallery() {
     };
 
     return (<>
-            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 280 : 300)}}>
+            <div style={{...style, height : isMobile ? 190 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+                <div>
+                    <img src="/charactor4.svg" width={isMobile ? 60 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
+                </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
 
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>갤러리</div>
