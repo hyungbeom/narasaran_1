@@ -19,8 +19,8 @@ export default function Introduce() {
 
     return (<>
             <div style={{ height : isMobile ? 190 : (isDesktop ? 280 : 300), display : 'flex'}}>
-                <div style={{paddingTop: isMobile ? 100 : 100}}>
-                    <img src="/charactor1.svg" width={150} alt=""/>
+                <div style={{paddingTop:isMobile ? 80 : 50, display : 'flex', alignItems : 'center'}}>
+                    <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>SIKAF 소개</div>

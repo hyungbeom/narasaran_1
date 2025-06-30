@@ -48,7 +48,7 @@ export default function Schedule() {
                     <div style={{ padding: isMobile ? "100px 20px" : "130px 60px", color : 'white' }}>
                         <div
                             style={{
-                                fontSize: isMobile ? 35 : isDesktop ? 50 : 45,
+                                fontSize: isMobile ? 35 : isDesktop ? 45 : 40,
                                 fontWeight: 800,
                             }}
                         >
@@ -57,7 +57,7 @@ export default function Schedule() {
                         <div
                             style={{
                                 paddingTop: isMobile ? 5 : 15,
-                                fontSize: isMobile ? 12 : isDesktop ? 20 : 17,
+                                fontSize: isMobile ? 12 : isDesktop ? 18 : 15,
                                 lineHeight: 1.5,
                             }}
                         >
