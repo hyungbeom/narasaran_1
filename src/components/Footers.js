@@ -129,7 +129,7 @@ export default function Footers() {
                                     <span style={{fontWeight : 700}}>BOM :</span> 25년 7월 12일
                                 </div>
                                 <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
-                                    <span style={{fontWeight : 700}}>대표이사 :</span> 25년 7월 12일
+                                    <span style={{fontWeight : 700}}>대표이사 :</span> 밤밤밤
                                 </div>
                                 <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
                                     <span style={{fontWeight : 700}}>주소 :</span> 학동 여기사무실 맞음?
