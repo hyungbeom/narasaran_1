@@ -41,9 +41,9 @@ export default function Schedule() {
                 <div style={bgStyle} />
 
                 <div style={contentStyle}>
-                    <div style={{ paddingTop: isMobile ? 100 : 100 }}>
+                    <div style={{display : 'flex', alignItems : 'center'}}>
                         {/* 이 img 는 밝기 필터 영향을 받지 않음 */}
-                        <img src="/charactor1.svg" width={150} alt="Character" />
+                        <img src="/charactor1.svg" width={isMobile ? 80 : 150} style={{paddingBottom : 15}} alt="Character" />
                     </div>
                     <div style={{ padding: isMobile ? "100px 20px" : "130px 60px" }}>
                         <div
@@ -56,14 +56,14 @@ export default function Schedule() {
                         </div>
                         <div
                             style={{
-                                paddingTop: isMobile ? 10 : 35,
-                                fontSize: isMobile ? 15 : isDesktop ? 20 : 17,
+                                paddingTop: isMobile ? 5 : 15,
+                                fontSize: isMobile ? 12 : isDesktop ? 20 : 17,
                                 lineHeight: 1.5,
                             }}
                         >
                             2025. 7. 12 SAT
                             <br />
-                            광화문 광장 놀이마당 일대
+                            광화문 광장 놀이마당 일대(세종대왕상 앞)
                         </div>
                     </div>
                 </div>
