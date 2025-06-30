@@ -124,29 +124,32 @@ export default function Footers() {
                         >
                             {/* INFO & CONTACT */}
                             <div>
-                                <div style={{fontSize: 20, fontWeight: 800}}>INFO & CONTACT</div>
-                                <div style={{fontSize: 13, display: 'flex', alignItems: 'center', paddingTop: 20}}>
-                                    <img src="https://sikaf.co.kr/icon/Calendar.svg" alt=""/> 25년 7월 12일
+                                <div style={{fontSize: 20, fontWeight: 800}}>INFORMATION</div>
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 20}}>
+                                    <span style={{fontWeight : 700}}>BOM :</span> 25년 7월 12일
                                 </div>
-                                <div style={{fontSize: 13, display: 'flex', alignItems: 'center', paddingTop: 7}}>
-                                    <img src="https://sikaf.co.kr/icon/Delivery Time.svg" alt=""/> 12:00 - 17:00
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>대표이사 :</span> 25년 7월 12일
                                 </div>
-                                <div style={{fontSize: 13, display: 'flex', alignItems: 'center', paddingTop: 20}}>
-                                    <img src="https://sikaf.co.kr/icon/Address.svg" alt=""/> 광화문 광장 놀이마당 일대
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>주소 :</span> 학동 여기사무실 맞음?
                                 </div>
-                                <div style={{fontSize: 13, display: 'flex', alignItems: 'center', paddingTop: 7}}>
-                                    <img src="https://sikaf.co.kr/icon/Email.svg" alt=""/> sikafofficial
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>사업자등록번호 :</span> 820-86-02992
                                 </div>
-                                <div style={{
-                                    fontSize: 13,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    paddingTop: 7,
-                                    paddingBottom: 20
-                                }}>
-                                    <img src="https://sikaf.co.kr/icon/Instagram.svg" alt=""/> sikaf_official
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>통신판매업 신고번호 :</span> 신고합니다.
                                 </div>
-                                <div style={{fontSize: 10}}>
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>전화번호 :</span> 1577-1577
+                                </div>
+                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
+                                    <span style={{fontWeight : 700}}>이메일 :</span> BOM@BOMBOMBOM.co.kr
+                                </div>
+
+
+
+                                <div style={{fontSize: 10, paddingTop : 10}}>
                                     All contents provided by SIKAF are copyrighted works protected by copyright law.
                                     <br/>
                                     © SIKAF. All rights reserved.
