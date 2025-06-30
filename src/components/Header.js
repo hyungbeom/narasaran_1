@@ -13,7 +13,7 @@ import {useMediaQuery} from "react-responsive";
 import Sidebar from "./Sidebar";
 
 
-const MENUS = ['SIKAF 소개',  '공모전 안내', '공모전 신청', '갤러리','고객센터'];
+const MENUS = [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '공모전 신청', link: '/exhibition'}, {title: '공모전 안내', link:'/guidelines'}, {title: '갤러리', link:'/gallery'},{title: '고객센터', link:'/prepare'},];
 const SUBMENU = [
     [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '일정안내', link: '/introduce/schedule'}],
     [{title: 'SIKAF 2025', link: '/exhibition'}, {title: '수상작 발표 2025', link: '/awards'},{title: '오시는길', link: '/map'}],
@@ -94,16 +94,23 @@ export default function Header() {
                 {isMobile ? <></> : <MenuColumnContainer
                     onMouseLeave={() => setHoverIdx(null)}
                 >
-                    {MENUS.map((label, i) => (
+                    {MENUS.map(({title, link}, i) => (
                         <MenuItem
-                            key={label}
+                            key={title}
                             ref={el => (menuRefs.current[i] = el)}
                             // hover가 있으면 hoverIdx, 없으면 activeIdx
                             className={i === (hoverIdx ?? activeIdx) ? 'active' : ''}
-                            onClick={() => setActiveIdx(i)}
+                            onClick={() => {
+
+                                if(link === '/prepare') {
+                                    return alert('준비중입니다');
+                                }
+                                setActiveIdx(i);
+                                navigate(link);
+                            }}
                             onMouseEnter={() => setHoverIdx(i)}
                         >
-                            {label}
+                            {title}
                         </MenuItem>
                     ))}
 
