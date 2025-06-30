@@ -60,6 +60,7 @@ export default function Sub3() {
                 display: 'flex',
                 flexDirection: 'column',
                 minHeight: '100vh',
+                backgroundColor : 'black'
             }}
         >
             {/* 1) 메인 콘텐츠 영역 */}
@@ -115,22 +116,24 @@ export default function Sub3() {
                                 gap: !isDesktop ? 20 : 30,
                             }}
                         >
-                            <div>주최</div>
-                            <img
+                            <div>주최/주관</div>
+                           <div> <img
                                 src="https://sikaf.co.kr/logo.svg"
                                 height={!isDesktop ? 30 : 50}
                                 alt="SIKAF 추진위원회"
                             />
+                               <span style={{color : 'white', fontSize : 15, paddingBottom : 10}}>추진위원회</span>
+                           </div>
                         </div>
 
                         <div
                             style={{
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: !isDesktop ? 20 : 30,
+                                gap: !isDesktop ? 20 : 20,
                             }}
                         >
-                            <div>주관</div>
+                            {/*<div>주관</div>*/}
                             <img
                                 src="https://sikaf.co.kr/bom.png"
                                 height={!isDesktop ? 30 : 50}

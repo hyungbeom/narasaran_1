@@ -21,16 +21,17 @@ export default function Sidebar({open, setOpen}) {
                 {title: '일정안내', link: '/introduce/schedule'},
             ],
         },
-        {title: '갤러리', link: '/gallery'},
-        {title: '장소', link: '/map'},
         {
             title: '공모전 안내',
             subMenu: [
                 {title: 'SIKAF 2025', link: '/exhibition'},
                 {title: '수상작 발표 2025', link: '/awards'},
+                {title: '오시는길', link: '/map'},
             ],
         },
         {title: '모집요강', link: '/guidelines'},
+
+        {title: '갤러리', link: '/gallery'},
         {
             title: '고객센터',
             subMenu: [

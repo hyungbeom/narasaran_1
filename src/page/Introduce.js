@@ -18,15 +18,18 @@ export default function Introduce() {
     };
 
     return (<>
-            <div style={{ height : isMobile ? 190 : (isDesktop ? 280 : 300)}}>
+            <div style={{ height : isMobile ? 190 : (isDesktop ? 280 : 300), display : 'flex'}}>
+                <div style={{paddingTop: isMobile ? 100 : 100}}>
+                    <img src="/charactor1.svg" width={150} alt=""/>
+                </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
-
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>SIKAF 소개</div>
                     <div style={{paddingTop :isMobile ? 10 :  20, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
                         {/*하단 타이틀 멘트없나용? <br/>*/}
                         Seoul International Kids & Youth Art Fair
                     </div>
                 </div>
+
             </div>
             <div style={{ color: 'black', ...style, padding:isMobile ?'30px 20px 35px 20px' : '30px 60px 35px 60px'}}>
 

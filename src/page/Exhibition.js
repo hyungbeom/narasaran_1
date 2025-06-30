@@ -57,7 +57,7 @@ export default function Exhibition() {
             >
                 <img
                     width={isMobile ? 130 :(isDesktop ? 280 : 250)}
-                    src="/joinButton.svg"
+                    src="https://sikaf.co.kr/joinButton.png"
                     alt="참가신청 버튼"
                     style={{  cursor: 'pointer' }}
                 />
