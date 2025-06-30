@@ -248,7 +248,7 @@ export default function Maps() {
 
 
 
-                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: 'https://sikaf.co.kr/icon/marker.svg', size : {width : 60, height : 60}}}>
+                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: 'https://sikaf.co.kr/icon/marker.svg', size : {width : 40, height : 40}}}>
                                         {/*<div style={{ textAlign: 'center' }}>광화문 광장 놀이마당</div>*/}
                                     </MapMarker>
                                 </Map>
