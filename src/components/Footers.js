@@ -71,27 +71,9 @@ export default function Footers() {
                                     display: 'flex',
                                     alignItems: 'center',
                                     paddingTop: 5,
-                                    gap: 3
-                                }}>
-                                    <span style={{fontWeight : 700}}>사업자등록번호 :</span> 	469-86-01008
-                                </div>
-                                <div style={{
-                                    fontSize: 11,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    paddingTop: 5,
-                                    gap: 3
-                                }}>
-                                    <span style={{fontWeight : 700}}>전화번호 :</span> 02.6956.7050
-                                </div>
-                                <div style={{
-                                    fontSize: 11,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    paddingTop: 5,
                                     paddingBottom: 50, gap: 3
                                 }}>
-                                    <span style={{fontWeight : 700}}>이메일 :</span>  준비중
+                                    <span style={{fontWeight : 700}}>이메일 :</span>  sikafofficial@gmail.com
                                 </div>
 
                             </div>

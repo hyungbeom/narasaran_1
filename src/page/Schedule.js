@@ -18,7 +18,7 @@ export default function Schedule() {
 
     return (
         <>
-            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center',   marginTop : isDesktop ? 80 : 70,...style}}>
+            <div style={{ height : isMobile ? 120 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center',   marginTop : isDesktop ? 80 : 70,...style}}>
                 <div style={{paddingTop:isMobile ? 0 : 0, display : 'flex', alignItems : 'center'}}>
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>

@@ -90,9 +90,9 @@ export default function Maps() {
     }, [mapView])
 
     return (<>
-            <div style={{...style, height: isMobile ? 140 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div style={{...style, height: isMobile ? 125 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
                 <div>
-                    <img src="/charactor2.svg" width={isMobile ? 80 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
+                    <img src="/charactor2.svg" width={isMobile ? 70 : 100} style={{paddingBottom : isMobile ? 0 :  15, paddingLeft : isMobile ? 20 :  30}} alt="Character" />
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
