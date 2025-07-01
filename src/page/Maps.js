@@ -90,9 +90,16 @@ export default function Maps() {
     }, [mapView])
 
     return (<>
-            <div style={{...style, height: isMobile ? 125 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div style={{
+                ...style,
+                height: isMobile ? 125 : (isDesktop ? 200 : 190),
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: isDesktop ? 80 : 70
+            }}>
                 <div>
-                    <img src="/charactor2.svg" width={isMobile ? 70 : 100} style={{paddingBottom : isMobile ? 0 :  15, paddingLeft : isMobile ? 20 :  30}} alt="Character" />
+                    <img src="/charactor2.svg" width={isMobile ? 70 : 100}
+                         style={{paddingBottom: isMobile ? 0 : 15, paddingLeft: isMobile ? 20 : 30}} alt="Character"/>
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
@@ -113,7 +120,7 @@ export default function Maps() {
                 color: 'black',
                 backgroundColor: 'white',
                 display: 'flex',
-                flexWrap : 'wrap',
+                flexWrap: 'wrap',
                 gap: 50,
                 padding: isMobile ? '30px 20px 35px 20px' : '60px 60px 35px 60px'
             }}>
@@ -121,7 +128,7 @@ export default function Maps() {
                 <div>
                     <div style={{
                         fontSize: 12,
-                        width: isMobile ? "100%"  : 400
+                        width: isMobile ? "100%" : 400
                     }}>
                         <div style={{
                             display: 'flex',
@@ -159,7 +166,13 @@ export default function Maps() {
           }}>
             {name}
           </span>
-                                            <div style={{display : 'flex', flexShrink: 0,flexWrap : 'wrap', width : '100%', paddingTop : 10, }}>
+                                            <div style={{
+                                                display: 'flex',
+                                                flexShrink: 0,
+                                                flexWrap: 'wrap',
+                                                width: '100%',
+                                                paddingTop: 10,
+                                            }}>
                                                 <span
                                                     style={{fontSize: 14, fontWeight: 600}}>   {buses.join(', ')}</span>
                                             </div>
@@ -207,17 +220,17 @@ export default function Maps() {
 
                     </div>
 
-                    <div style={{ marginTop: 20, border: '1px solid lightGray', padding: 20 }}>
+                    <div style={{marginTop: 20, border: '1px solid lightGray', padding: 20}}>
                         {mapView === 'simple' ? (
-                            <img src="https://sikaf.co.kr/map.svg" width={isMobile ? '100%' :  800} alt="약도" />
+                            <img src="https://sikaf.co.kr/map.svg" width={isMobile ? '100%' : 800} alt="약도"/>
                         ) : (
-                            <div style={{ position: 'relative', width: '100%', height: 500 }}>
+                            <div style={{position: 'relative', width: '100%', height: 500}}>
 
 
                                 <Map
-                                    center={{ lat: 37.57291910825706, lng: 126.97690724242149}}
+                                    center={{lat: 37.57291910825706, lng: 126.97690724242149}}
                                     level={2}
-                                    style={{ width:  `calc(100vw - ${isMobile ? 80 : 700}px)`, height: '100%' }}
+                                    style={{width: `calc(100vw - ${isMobile ? 80 : 700}px)`, height: '100%'}}
                                     onCreate={map => {
                                         mapRef.current = map;
 
@@ -234,8 +247,8 @@ export default function Maps() {
                                         const mapTypeControl = new kakao.maps.MapTypeControl();
                                         map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
                                         // 확대/축소 컨트롤 추가
-                                          const zoomControl = new kakao.maps.ZoomControl();
-                                          map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+                                        const zoomControl = new kakao.maps.ZoomControl();
+                                        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
                                         // 초기 레벨 설정
                                         setZoomLevel(map.getLevel());
 
@@ -248,8 +261,10 @@ export default function Maps() {
                                 >
 
 
-
-                                    <MapMarker position={{ lat: 37.57291910825706, lng: 126.97690724242149 }} image={{src: 'https://sikaf.co.kr/icon/marker.svg', size : {width : 40, height : 40}}}>
+                                    <MapMarker position={{lat: 37.57291910825706, lng: 126.97690724242149}} image={{
+                                        src: 'https://sikaf.co.kr/icon/marker.svg',
+                                        size: {width: 40, height: 40}
+                                    }}>
                                         {/*<div style={{ textAlign: 'center' }}>광화문 광장 놀이마당</div>*/}
                                     </MapMarker>
                                 </Map>
