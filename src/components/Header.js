@@ -19,7 +19,7 @@ const SUBMENU = [
     [{title: 'SIKAF 2025', link: '/exhibition', depth : 1}, {title: '수상작 발표 2025', link: '/awards', depth : 1},{title: '오시는길', link: '/map', depth : 1}],
     [{title: '모집요강', link: '/guidelines', depth : 2}],
     [{title: '갤러리', link: '/gallery', depth : 3}],
-    [{title: '공지사항', link: '/prepare', depth : 4}, {title: '언론보도', link: '/prepare', depth : 4}, {title: 'Q&A', link: '/prepare', depth : 4}]
+    [{title: '공지사항', link: '/prepare', depth : 4}, {title: '언론보도', link: '/prepare', depth : 4}, {title: 'Q&A', link: '/qna', depth : 4}]
 ];
 
 export default function Header() {

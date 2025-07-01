@@ -11,6 +11,7 @@ import Review from "./page/Review";
 import Qna from "./page/Qna";
 import Gallery from "./page/Gallery";
 import Exhibition from "./page/Exhibition";
+import Board from "./page/Board";
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                 <Route path="/guidelines" element={<Photo />} />
                 <Route path="/review" element={<Review />} />
                 <Route path="/qna" element={<Qna />} />
+                <Route path="/board/:id" element={<Board />} />
 
                 {/* 정의되지 않은 경로일 때 */}
                 {/*<Route path="*" element={<NotFound />} />*/}
