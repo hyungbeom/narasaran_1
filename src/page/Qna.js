@@ -37,14 +37,14 @@ export default function Qna() {
             title: '상태',
             dataIndex: 'age',
             key: 'age',
-            render : v=> <>{!v ? <Button size={'small'} type={'primary'} style={{fontSize : 12}}>공개</Button> : <Button size={'small'} danger style={{fontSize : 12}}>비공개</Button>}</>
+            render : v=> <>{!v ? <Button size={'small'} type={'primary'} style={{fontSize : isMobile ? 11 : 12}}>공개</Button> : <Button size={'small'} danger style={{fontSize : isMobile ? 11 : 12}}>비공개</Button>}</>
         },
         {
             title: '등록일',
             dataIndex: 'date',
             key: 'date',
             width : 100,
-            render : v=> <span style={{fontSize : 13, color : 'gray'}}>{v}</span>
+            render : v=> <span style={{fontSize : isMobile ? 11 : 13, color : 'gray'}}>{v}</span>
         },
     ];
 
