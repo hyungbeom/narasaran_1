@@ -123,7 +123,7 @@ export default function Footers() {
                         {/* 2. 어두운 배경 영역 */}
                         <div
                             style={{
-                                height: 230,
+                                height: 180,
                                 display: 'flex',
                                 backgroundColor: '#2D2D2D',
                                 padding: '20px 100px',
@@ -143,15 +143,15 @@ export default function Footers() {
                                 <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
                                     <span style={{fontWeight : 700}}>주소 :</span> 서울시 강남구 논현동 36-11 3층
                                 </div>
-                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
-                                    <span style={{fontWeight : 700}}>사업자등록번호 :</span> ??????????
-                                </div>
+                                {/*<div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>*/}
+                                {/*    <span style={{fontWeight : 700}}>사업자등록번호 :</span> ??????????*/}
+                                {/*</div>*/}
 
+                                {/*<div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>*/}
+                                {/*    <span style={{fontWeight : 700}}>전화번호 :</span> 02.6956.7050*/}
+                                {/*</div>*/}
                                 <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
-                                    <span style={{fontWeight : 700}}>전화번호 :</span> 02.6956.7050
-                                </div>
-                                <div style={{fontSize: 12, display: 'flex', alignItems: 'center', paddingTop: 8}}>
-                                    <span style={{fontWeight : 700}}>이메일 :</span> BOM@BOMBOMBOM.co.kr
+                                    <span style={{fontWeight : 700}}>이메일 :</span> sikafofficial@gmail.com
                                 </div>
 
 

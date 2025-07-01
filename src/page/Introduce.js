@@ -9,7 +9,7 @@ export default function Introduce() {
 
 
     const style = {
-        backgroundImage: `url(${subImage})`,
+        backgroundImage: `url(/subtitle/subtitle1.jpg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',
@@ -18,7 +18,7 @@ export default function Introduce() {
     };
 
     return (<>
-            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70,...style}}>
                 <div style={{paddingTop:isMobile ? 0 : 0, display : 'flex', alignItems : 'center'}}>
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
@@ -29,9 +29,8 @@ export default function Introduce() {
                         Seoul International Kids & Youth Art Fair
                     </div>
                 </div>
-
             </div>
-            <div style={{ color: 'black', ...style, padding:isMobile ?'30px 20px 35px 20px' : '30px 60px 35px 60px'}}>
+            <div style={{ color: 'black',  padding:isMobile ?'30px 20px 35px 20px' : '30px 60px 35px 60px'}}>
 
                 <div style={{paddingTop : isMobile ? 20 : 35, fontSize : isMobile ? 15 :  (isDesktop ? 20 : 17), lineHeight :isMobile ? 1.7 : 2, fontWeight : 700}}>
 
