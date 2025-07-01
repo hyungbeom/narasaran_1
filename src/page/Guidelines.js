@@ -27,8 +27,8 @@ export default function Guidelines() {
                 marginTop: isDesktop ? 80 : 70
             }}>
                 <div>
-                    <img src="/charactor3.svg" width={isMobile ? 100 : 150}
-                         style={{paddingBottom: 15, paddingLeft: isMobile ? 10 : 30}} alt="Character"/>
+                    <img src="/charactor3.svg" width={isMobile ? 80 : 130}
+                         style={{paddingBottom:isMobile ? 0 : 15, paddingLeft: isMobile ? 10 : 30}} alt="Character"/>
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '130px 60px'}}>
 
