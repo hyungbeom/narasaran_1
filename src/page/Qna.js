@@ -51,7 +51,7 @@ export default function Qna() {
 
 
     const style = {
-        backgroundImage: `url(/subtitle/subtitle4.jpg)`,
+        backgroundImage: `url(/subtitle/subtitle5.jpg)`,
         backgroundSize: '100% auto',              // 가로 100%, 세로 자동
         backgroundRepeat: 'no-repeat',            // 반복 없음
         backgroundPosition: 'bottom center',         // 상단 중앙 정렬

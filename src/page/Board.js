@@ -1,6 +1,7 @@
 import {useNavigate, useParams} from "react-router-dom";
 import {useMediaQuery} from "react-responsive";
 import {Button} from "antd";
+import React from "react";
 
 export default function Board() {
 
@@ -9,10 +10,31 @@ export default function Board() {
     const navigate = useNavigate();
     const {id} = useParams();
 
+    const style = {
+        backgroundImage: `url(/subtitle/subtitle5.jpg)`,
+        backgroundSize: '100% auto',              // 가로 100%, 세로 자동
+        backgroundRepeat: 'no-repeat',            // 반복 없음
+        backgroundPosition: 'bottom center',         // 상단 중앙 정렬
+        backgroundAttachment: 'scroll',           // (fixed 원하면 변경)
+        color: 'black'
+    };
 
     return <>
+        <div style={{...style, height : isMobile ? 140 : (isDesktop ? 200 : 190), display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70}}>
+            <div>
+                <img src="/charactor4.svg" width={isMobile ? 60 : 100} style={{paddingBottom : 15, paddingLeft : 30}} alt="Character" />
+            </div>
+            <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
 
-        <div style={{maxWidth: 1000, margin:  isMobile ? '100px auto' : '225px auto'}}>
+                <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>고객센터</div>
+                <div style={{paddingTop :isMobile ? 10 :  35, fontSize : isMobile ? 12 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
+                    {/*하단 타이틀 멘트없나용? <br/>*/}
+                    궁금한 사항들을 질의응답해보세요
+                </div>
+            </div>
+        </div>
+
+        <div style={{maxWidth: 1000, margin:  isMobile ? '25px auto' : '80px auto'}}>
 
             <div style={{textAlign: 'right', color: 'lightgray', fontSize: 13, paddingBottom: 10}}>
                 조회수 : -
