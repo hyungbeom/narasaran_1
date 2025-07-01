@@ -9,16 +9,16 @@ export default function Introduce() {
 
 
     const style = {
-        backgroundImage: `url(/subtitle/subtitle1.jpg})`,
+        backgroundImage: `url(/subtitle/subtitle1.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundAttachment: 'fixed',
 
-        color: 'white'
+        color: 'black'
     };
 
     return (<>
-            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center', marginTop : isDesktop ? 80 : 70,...style}}>
+            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center',  borderBottom : '0.5px solid lightGray', marginTop : isDesktop ? 80 : 70,...style}}>
                 <div style={{paddingTop:isMobile ? 0 : 0, display : 'flex', alignItems : 'center'}}>
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
