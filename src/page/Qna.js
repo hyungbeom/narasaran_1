@@ -78,10 +78,10 @@ export default function Qna() {
             <div style={{
                 color: 'black',
                 backgroundColor: 'white',
-                padding: isMobile ? '30px 20px 35px 20px' : '60px 150px 35px 150px'
+                padding: isMobile ? '30px 0px' : '60px 150px 35px 150px'
             }}>
 
-                <Table size={'small'}  dataSource={dataSource} columns={columns} />
+                <Table size={'small'}  dataSource={dataSource} columns={columns}  />
             </div>
 
 
