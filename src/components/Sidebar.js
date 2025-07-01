@@ -37,7 +37,7 @@ export default function Sidebar({open, setOpen}) {
             subMenu: [
                 {title: '공지사항', link: '/prepare'},
                 {title: '언론보도', link: '/prepare'},
-                {title: 'FAQ', link: '/prepare'},
+                {title: 'FAQ', link: '/qna'},
             ],
         },
     ];
