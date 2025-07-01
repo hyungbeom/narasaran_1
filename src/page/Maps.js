@@ -75,11 +75,12 @@ export default function Maps() {
 
 
     const style = {
-        backgroundImage: `url(${subImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center',
-        backgroundAttachment: 'fixed',
-        color: 'white'
+        backgroundImage: `url(/subtitle/subtitle2.jpg)`,
+        backgroundSize: '100% auto',              // 가로 100%, 세로 자동
+        backgroundRepeat: 'no-repeat',            // 반복 없음
+        backgroundPosition: 'bottom center',         // 상단 중앙 정렬
+        backgroundAttachment: 'scroll',           // (fixed 원하면 변경)
+        color: 'black'
     };
 
     useEffect(() => {

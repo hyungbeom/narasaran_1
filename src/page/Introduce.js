@@ -10,15 +10,15 @@ export default function Introduce() {
 
     const style = {
         backgroundImage: `url(/subtitle/subtitle1.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center',
-        backgroundAttachment: 'fixed',
-
+        backgroundSize: '100% auto',              // 가로 100%, 세로 자동
+        backgroundRepeat: 'no-repeat',            // 반복 없음
+        backgroundPosition: 'bottom center',         // 상단 중앙 정렬
+        backgroundAttachment: 'scroll',           // (fixed 원하면 변경)
         color: 'black'
     };
 
     return (<>
-            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center',  borderBottom : '0.5px solid lightGray', marginTop : isDesktop ? 80 : 70,...style}}>
+            <div style={{ height : isMobile ? 140 : (isDesktop ? 200 : 190),display : 'flex', alignItems : 'center',   marginTop : isDesktop ? 80 : 70,...style}}>
                 <div style={{paddingTop:isMobile ? 0 : 0, display : 'flex', alignItems : 'center'}}>
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
