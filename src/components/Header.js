@@ -78,14 +78,14 @@ export default function Header() {
                          navigate('/')
                      }}
                 >
-                    <img src="https://sikaf.co.kr/logo.svg" alt="logo" width={80} style={{paddingRight: 8}}/>
+                    <img src="/logo.svg" alt="logo" width={110} style={{paddingRight: 0}}/>
                     <span style={{fontSize: 11, fontWeight: 700, marginLeft: 8, color: isMobile ? 'white' : 'black'}}>
 
-                        <div>
+                        <div style={{letterSpacing : 0.9}}>
                             서울국제어린이청소년아트페어
                         </div>
-                        <div style={{fontSize: 9}}>
-                           SEOUL INTERNATIONAL KIDS & TEENAGER
+                        <div style={{fontSize: 8, fontWeight: 600, letterSpacing : -0.38}}>
+                           SEOUL INTERNATIONAL KIDS&YOUTH
                         </div>
                    </span>
                 </div>
