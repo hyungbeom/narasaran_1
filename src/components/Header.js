@@ -13,13 +13,24 @@ import {useMediaQuery} from "react-responsive";
 import Sidebar from "./Sidebar";
 
 
-const MENUS = [{title: 'SIKAF 소개', link: '/introduce/program'}, {title: '공모전 신청', link: '/exhibition'}, {title: '공모전 안내', link:'/guidelines'}, {title: '갤러리', link:'/gallery'},{title: '고객센터', link:'/prepare'},];
+const MENUS = [{title: 'SIKAF 소개', link: '/introduce/program'}, {
+    title: '공모전 신청',
+    link: '/exhibition'
+}, {title: '공모전 안내', link: '/guidelines'}, {title: '갤러리', link: '/gallery'}, {title: '고객센터', link: '/prepare'},];
 const SUBMENU = [
-    [{title: 'SIKAF 소개', link: '/introduce/program', depth : 0}, {title: '일정안내', link: '/introduce/schedule', depth : 0}],
-    [{title: 'SIKAF 2025', link: '/exhibition', depth : 1}, {title: '수상작 발표 2025', link: '/awards', depth : 1},{title: '오시는길', link: '/map', depth : 1}],
-    [{title: '모집요강', link: '/guidelines', depth : 2}],
-    [{title: '갤러리', link: '/gallery', depth : 3}],
-    [{title: '공지사항', link: '/prepare', depth : 4}, {title: '언론보도', link: 'https://www.ibabynews.com/news/articleView.html?idxno=134859', depth : 4}, {title: 'Q&A', link: '/qna', depth : 4}]
+    [{title: 'SIKAF 소개', link: '/introduce/program', depth: 0}, {title: '일정안내', link: '/introduce/schedule', depth: 0}],
+    [{title: 'SIKAF 2025', link: '/exhibition', depth: 1}, {
+        title: '수상작 발표 2025',
+        link: '/awards',
+        depth: 1
+    }, {title: '오시는길', link: '/map', depth: 1}],
+    [{title: '모집요강', link: '/guidelines', depth: 2}],
+    [{title: '갤러리', link: '/gallery', depth: 3}],
+    [{title: '공지사항', link: '/prepare', depth: 4}, {
+        title: '언론보도',
+        link: '/broadcast',
+        depth: 4
+    }, {title: 'Q&A', link: '/qna', depth: 4}]
 ];
 
 export default function Header() {
@@ -81,10 +92,10 @@ export default function Header() {
                     <img src="/logo.svg" alt="logo" width={110} style={{paddingRight: 0}}/>
                     <span style={{fontSize: 11, fontWeight: 700, marginLeft: 8, color: isMobile ? 'white' : 'black'}}>
 
-                        <div style={{letterSpacing : 0.9}}>
+                        <div style={{letterSpacing: 0.9}}>
                             서울국제어린이청소년아트페어
                         </div>
-                        <div style={{fontSize: 8, fontWeight: 600, letterSpacing : -0.38}}>
+                        <div style={{fontSize: 8, fontWeight: 600, letterSpacing: -0.38}}>
                            SEOUL INTERNATIONAL KIDS&YOUTH
                         </div>
                    </span>
@@ -102,7 +113,7 @@ export default function Header() {
                             className={i === (hoverIdx ?? activeIdx) ? 'active' : ''}
                             onClick={() => {
 
-                                if(link === '/prepare') {
+                                if (link === '/prepare') {
                                     return alert('준비중입니다');
                                 }
                                 setActiveIdx(i);
@@ -122,7 +133,8 @@ export default function Header() {
 
                 {/* — 언어 토글 */}
                 <div style={{width: isMobile ? 50 : 400, textAlign: 'right', paddingRight: 20}}>
-                    {isMobile ? <img src={"https://sikaf.co.kr/icon/Menu.svg"} alt="" style={{cursor: 'pointer', marginTop: -10}}
+                    {isMobile ? <img src={"https://sikaf.co.kr/icon/Menu.svg"} alt=""
+                                     style={{cursor: 'pointer', marginTop: -10}}
                                      onClick={() => {
                                          setOpen(v => !v)
                                      }}
@@ -153,10 +165,7 @@ export default function Header() {
                                              return alert('준비중입니다.')
                                          }
 
-                                         if(v.title === '언론보도'){
-                                            return      window.open(v.link, "_blank");
-                                         }
-                                         setActiveIdx(v.depth)
+                                         setActiveIdx(v.depth);
                                          navigate(v.link);
                                      }}
                                 >{v.title}</div>
