@@ -36,7 +36,7 @@ export default function Sidebar({open, setOpen}) {
             title: '고객센터',
             subMenu: [
                 {title: '공지사항', link: '/prepare'},
-                {title: '언론보도', link: '/prepare'},
+                {title: '언론보도', link: 'https://www.ibabynews.com/news/articleView.html?idxno=134859'},
                 {title: 'FAQ', link: '/qna'},
             ],
         },
@@ -67,8 +67,8 @@ export default function Sidebar({open, setOpen}) {
                 top: 0, right: 0,
                 width: 300,
                 height: '100dvh',
-                overflowY : 'auto',
-                WebkitOverflowScrolling : 'touch',
+                overflowY: 'auto',
+                WebkitOverflowScrolling: 'touch',
                 backgroundColor: 'white',
                 zIndex: 1400,
                 fontSize: 12, fontWeight: 800,
@@ -136,7 +136,15 @@ export default function Sidebar({open, setOpen}) {
                             {item.subMenu.map(sub => (
                                 <div
                                     key={sub.title}
-                                    onClick={() => handleSubClick(sub.link)}
+                                    onClick={() => {
+
+                                        if (sub.title === '언론보도') {
+
+                                            window.open(sub.link, "_blank");
+                                        } else {
+                                            handleSubClick(sub.link)
+                                        }
+                                    }}
                                     style={{
                                         cursor: 'pointer',
                                         padding: '12px 40px',
