@@ -36,7 +36,7 @@ export default function Sidebar({open, setOpen}) {
             title: '고객센터',
             subMenu: [
                 {title: '공지사항', link: '/prepare'},
-                {title: '언론보도', link: 'https://www.ibabynews.com/news/articleView.html?idxno=134859'},
+                {title: '언론보도', link: '/broadcast'},
                 {title: 'FAQ', link: '/qna'},
             ],
         },
@@ -138,12 +138,9 @@ export default function Sidebar({open, setOpen}) {
                                     key={sub.title}
                                     onClick={() => {
 
-                                        if (sub.title === '언론보도') {
 
-                                            window.open(sub.link, "_blank");
-                                        } else {
                                             handleSubClick(sub.link)
-                                        }
+
                                     }}
                                     style={{
                                         cursor: 'pointer',

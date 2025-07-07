@@ -40,7 +40,9 @@ export default function BroadCast() {
 
     const columns = [
         {
-            title: '제목',
+            title: <div style={{
+                fontSize : isMobile ? 11 : 15
+            }}>제목</div>,
             dataIndex: 'title',
             key: 'title',
             render : (v, src)=>{
@@ -55,7 +57,9 @@ export default function BroadCast() {
             }
         },
         {
-            title: '언론사',
+            title: <div style={{
+                fontSize : isMobile ? 11 : 15
+            }}>언론사</div>,
             dataIndex: 'broad',
             key: 'broad',
             render : v=> <div style={{
@@ -64,7 +68,9 @@ export default function BroadCast() {
             }}>{v}</div>
         },
         {
-            title: '등록일',
+            title: <div style={{
+                fontSize : isMobile ? 11 : 15
+            }}>등록일</div>,
             dataIndex: 'date',
             key: 'date',
             width : 100,
