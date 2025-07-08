@@ -53,7 +53,7 @@ export default function DateList() {
                 <td style={{ ...cellStyle, fontWeight: 'bold' }}>
                     나라사랑 전통놀이 체험부스
                 </td>
-                <td style={cellStyle}>10:00~17:00</td>
+                <td style={cellStyle}>13:00~17:00</td>
                 <td style={cellStyle}>
                     <ul style={listStyle}>
                         <li>- 딱지치기</li>
