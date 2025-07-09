@@ -60,7 +60,7 @@ export default function Guidelines() {
                     fontWeight: 600,
                     paddingTop: isMobile ? 3 : 10,
                     fontSize: isMobile ? 12 : 20
-                }}>2025 BUSAN INTERNATIONAL KIDS ART FAIR
+                }}>2025 SEOUL INTERNATIONAL KIDS&YOUTH
                 </div>
                 <div style={{
                     fontSize: isMobile ? 13 : 18,
