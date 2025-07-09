@@ -80,7 +80,9 @@ export default function GuideList() {
             </tr>
             <tr>
                 <td style={{...thTdStyle, fontWeight: 'bold'}}>그림 재료 및 도화지 배부</td>
-                <td style={thTdStyle}>12시부터 종합안내소에서 본인 확인 후 도화지 배부</td>
+                <td style={thTdStyle}>12시부터 종합안내소에서 본인 확인 후 도화지 배부<br/>
+                    유화, 수채화 등 그림재료는 자유, 각자 용품을 챙겨오셔야 합니다.
+                </td>
             </tr>
             <tr>
                 <td style={{...thTdStyle, fontWeight: 'bold'}}>작품크기</td>
@@ -121,6 +123,7 @@ export default function GuideList() {
                 <td style={{...thTdStyle, fontWeight: 'bold'}}>공모참 특전</td>
                 <td style={thTdStyle}>대상 수상자들은 프랑스 루브르 미술관 전시 연계</td>
             </tr>
+
             <tr>
                 <td style={{...thTdStyle, fontWeight: 'bold', alignItems : 'center', paddingTop : 15}}>시상식</td>
                 <td style={thTdStyle}>
