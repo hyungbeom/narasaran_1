@@ -49,7 +49,7 @@ export default function GuideList() {
             </tr>
             <tr>
                 <td style={{...thTdStyle, fontWeight: 'bold'}}>행사일시</td>
-                <td style={thTdStyle}>2025.7.12(토) 12:00-17:00</td>
+                <td style={thTdStyle}>2025.7.12(토) 13:00-17:00</td>
             </tr>
             <tr>
                 <td style={{...thTdStyle, fontWeight: 'bold'}}>행사 슬로건</td>

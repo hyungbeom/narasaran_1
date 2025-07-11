@@ -113,7 +113,7 @@ export default function Main() {
                 </div>
                 <img
                     style={{height : '80vh'}}
-                    src="https://sikaf.co.kr/poster.png"
+                    src="/notice.png"
                     alt=""
                 />
                 <div style={{

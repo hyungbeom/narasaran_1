@@ -93,9 +93,9 @@ export default function Schedule() {
             </div>
 
 
-            <div style={{width : '100%', maxWidth : 1000, paddingLeft : isDesktop ? 45 : 0}}>
-                <img src="/program_img.png" width={ isDesktop ?' 50%':'100%'} style={{float: 'left'}} alt=""/>
-                <img src="/schedule_img.png" width={isDesktop ? '50%' : '100%'}  style={{float: 'left'}} alt=""/>
+            <div style={{width : '100%', maxWidth : 1920, paddingLeft : isDesktop ? 45 : 0}}>
+                <img src="/program_img.svg" width={ isDesktop ?' 50%':'100%'} style={{float: 'left'}} alt=""/>
+                {/*<img src="/schedule_img.png" width={isDesktop ? '50%' : '100%'}  style={{float: 'left'}} alt=""/>*/}
             </div>
             <div style={{width : '100%', float : 'right'}}>
                 <Footers/>
