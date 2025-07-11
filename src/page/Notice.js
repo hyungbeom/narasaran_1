@@ -106,9 +106,25 @@ export default function Notice() {
                         <br/>
 
                         <span style={{fontWeight: 700}}>폭염유의</span>: 야외 이동 시 온열질환 예방에 유의해주세요. <br/>
+
+
+                        <div style={{fontWeight: 800, paddingTop : 10}}>참가자 주의사항 안내</div>
+                        # 날이 무더운 관계로 실외보다는 실내, 그늘에서 작업해주세요.<br/>
+
+                      <div style={{fontWeight : 700}}>  # 실내 공간 사용 시</div>
+                        쓰레기는 지정된 곳에 꼭 버려주세요!<br/>
+                        물감채색은 야외에서 진행해주세요.<br/>
+                        부득이하게 실내에서 채색 시에는<br/>
+                        테이블이나 바닥에 튀지 않게 주의해주세요.<br/>
+                        실내공간이(테이블, 벽, 의자) 훼손되지 않게 주의 부탁드려요.<br/>
+                        관람객, 통행객에게 불편을 드리지 않게끔 적당한 공간 사용 부탁드려요!<br/>
+                        <br/><br/>
+                        # 야외 사생대회 공간 내에서는 작은 캠핑용 테이블, 의자 등 사용이 가능합니다:)<br/>
+                        # 충분한 수분 섭취는 필수!
+
                     </div>
                     <div style={{height: 30}}/>
-                    <div style={{fontSize : 13, fontWeight : 600}}>
+                    <div style={{fontSize : 14, fontWeight : 600}}>
                         우리가 함께 그리는 대한민국의 기억” 함께 만들어 주세요!<br/>
                         감사합니다.<br/>
                         -SIKAF 운영팀 드림-

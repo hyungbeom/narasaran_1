@@ -19,10 +19,10 @@ export default function Main() {
     const [currentPage, setCurrentPage] = useState(0);
     // popup 초기값을 lazy initializer로 PC 기준에 맞춰 결정
     const [popup, setPopup] = useState(() => {
-        if (!isDesktop()) {
-            // 모바일이면 팝업 로직 적용하지 않고 항상 false
-            return false;
-        }
+        // if (!isDesktop()) {
+        //     // 모바일이면 팝업 로직 적용하지 않고 항상 false
+        //     return false;
+        // }
         // 데스크탑이면 기존 로직 그대로
         const hideUntil = localStorage.getItem(POPUP_HIDE_KEY);
         return !(hideUntil && Date.now() < Number(hideUntil));
