@@ -112,7 +112,7 @@ export default function Main() {
                     <img src="https://sikaf.co.kr/icon/Close.svg" alt=""/>
                 </div>
                 <img
-                    style={{height : '70vh'}}
+                    style={{height : isDesktop() ? '80vw' : '70vh'}}
                     src="/notice.png"
                     alt=""
                 />
