@@ -19,6 +19,7 @@ export default function Sidebar({open, setOpen}) {
             subMenu: [
                 {title: '프로그램 안내', link: '/introduce/program'},
                 {title: '일정안내', link: '/introduce/schedule'},
+                {title: '공지사항', link: '/notice'}
             ],
         },
         {
@@ -35,7 +36,6 @@ export default function Sidebar({open, setOpen}) {
         {
             title: '고객센터',
             subMenu: [
-                {title: '공지사항', link: '/prepare'},
                 {title: '언론보도', link: '/broadcast'},
                 {title: 'FAQ', link: '/qna'},
             ],

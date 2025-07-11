@@ -13,6 +13,7 @@ import Gallery from "./page/Gallery";
 import Exhibition from "./page/Exhibition";
 import Board from "./page/Board";
 import BroadCast from "./page/BroadCast";
+import Notice from "./page/Notice";
 
 export default function App() {
     return (
@@ -35,6 +36,7 @@ export default function App() {
                 <Route path="/qna" element={<Qna />} />
                 <Route path="/broadcast" element={<BroadCast />} />
                 <Route path="/board/:id" element={<Board />} />
+                <Route path="/notice" element={<Notice />} />
 
                 {/* 정의되지 않은 경로일 때 */}
                 {/*<Route path="*" element={<NotFound />} />*/}
