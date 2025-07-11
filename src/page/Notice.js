@@ -67,7 +67,7 @@ export default function Notice() {
                         fontWeight: 700,
                     }}
                 >
-                    행사 시간, 장소 변경안내
+                    행사 변경 안내
                 </div>
             </div>
 
@@ -75,6 +75,7 @@ export default function Notice() {
             <div style={{width: '100%', maxWidth: 1000, paddingLeft: isDesktop ? 45 : 0, paddingBottom: 50, margin : '0px auto'}}>
 
                 <div style={{maxWidth: 1000, border: '1px solid lightGray', textAlign: 'center', padding: '50px 20px'}}>
+                    <div style={{fontSize : 40, fontWeight : 800, paddingBottom : 20}}>행사 변경 안내</div>
                     <div style={{fontSize: 20, fontWeight: 800}}>
                         광복 80주년 기념 「나라사랑 어린이·청소년 아트 페스티벌」에 신청해 주셔서 감사합니다
                     </div>
@@ -84,7 +85,7 @@ export default function Notice() {
                     </div>
 
 
-                    <div style={{paddingTop: 20}}>
+                    <div style={{paddingTop: 20, lineHeight : 2}}>
                         <span style={{fontWeight: 700}}> 행사일정</span> (변경됨) <br/>
 
                         <span style={{fontWeight: 700}}>일시</span>: 2025년 7월 12일(토) <br/>
@@ -101,6 +102,9 @@ export default function Notice() {
                         <br/>
                         <span style={{fontWeight: 700}}>작품 제출 마감</span>: 오후 5시까지 종합 안내소 <br/>
                         <span style={{fontWeight: 700}}>준비물</span>: 화판, 돗자리, 미술도구, 모자, 물 등 <br/>
+                        <span style={{fontWeight: 700}}>부대행사 취소 안내</span>:  버블벌룬 매직쇼, 키즈걸그룹댄스공연, 버스킹 공연 취소
+                        <br/>
+
                         <span style={{fontWeight: 700}}>폭염유의</span>: 야외 이동 시 온열질환 예방에 유의해주세요. <br/>
                     </div>
                     <div style={{height: 30}}/>
