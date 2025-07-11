@@ -212,11 +212,12 @@ export default function Maps() {
                 <div>
                     <div style={{display: 'flex', gap: 20, fontWeight: 'bold', cursor: 'pointer'}}>
                         <div style={{opacity: mapView === 'kakao' ? 1 : 0.5, cursor: 'pointer'}}
-                             onClick={() => setMapView('kakao')}>카카오맵
+                             // onClick={() => setMapView('kakao')}
+                        >카카오맵
                         </div>
-                        <div style={{opacity: mapView === 'simple' ? 1 : 0.5}}
-                             onClick={() => setMapView('simple')}>약도
-                        </div>
+                        {/*<div style={{opacity: mapView === 'simple' ? 1 : 0.5}}*/}
+                        {/*     onClick={() => setMapView('simple')}>약도*/}
+                        {/*</div>*/}
 
                     </div>
 
