@@ -28,8 +28,8 @@ export default function Notice() {
                     <img src="/charactor1.svg" width={isMobile ? 80 : 150} alt=""/>
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
-                    <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>일정안내</div>
-                    <div style={{
+                    <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>공지사항</div>
+                    <div style={ㄱ
                         paddingTop: isMobile ? 10 : 20,
                         fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
