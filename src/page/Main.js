@@ -17,12 +17,13 @@ function isDesktop() {
 
 export default function Main() {
     const [currentPage, setCurrentPage] = useState(0);
+    const [device, setDevice] = useState('pc');
     // popup 초기값을 lazy initializer로 PC 기준에 맞춰 결정
     const [popup, setPopup] = useState(() => {
-        // if (!isDesktop()) {
-        //     // 모바일이면 팝업 로직 적용하지 않고 항상 false
-        //     return false;
-        // }
+        if (!isDesktop()) {
+            // 모바일이면 팝업 로직 적용하지 않고 항상 false
+            setDevice('mo')
+        }
         // 데스크탑이면 기존 로직 그대로
         const hideUntil = localStorage.getItem(POPUP_HIDE_KEY);
         return !(hideUntil && Date.now() < Number(hideUntil));
@@ -92,6 +93,7 @@ export default function Main() {
         window.open(`mailto:${EMAIL_ADDRESS}`, '_self');
     };
 
+
     return (
         <>
 
@@ -112,7 +114,7 @@ export default function Main() {
                     <img src="https://sikaf.co.kr/icon/Close.svg" alt=""/>
                 </div>
                 <img
-                    style={{height : isDesktop() ? '80vw' : '70vh'}}
+                    style={{height : device === 'mo'? '80vw' : '70vh'}}
                     src="/notice.png"
                     alt=""
                 />
