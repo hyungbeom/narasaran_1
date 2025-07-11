@@ -30,8 +30,9 @@ export default function Awards() {
                         fontSize: isMobile ? 12 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
                     }}>
-                        {isMobile ? <> 2025. 7. 12 SAT <br/> 광화문 광장 놀이마당 일대(세종대왕상
-                            앞)</> : '2025. 7. 12 SAT  광화문 광장 놀이마당 일대(세종대왕상 앞)'}
+                        {isMobile ? <> 2025. 7. 12 SAT <br/> 세종문화회관 1층 라운지 일대
+                            세종충무공 이야기공간 일대 (지하 1층)</> : ' 세종문화회관 1층 라운지 일대\n' +
+                            '세종충무공 이야기공간 일대 (지하 1층)'}
                     </div>
                 </div>
             </div>

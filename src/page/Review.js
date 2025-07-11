@@ -23,7 +23,8 @@ export default function Review() {
                     <div style={{fontSize : isMobile ? 35 :(isDesktop ?50 : 45), fontWeight : 800}}>리뷰</div>
                     <div style={{paddingTop :isMobile ? 20 :  35, fontSize : isMobile ? 15 : (isDesktop ? 20 : 17), lineHeight : 1.5}}>
                         2025. 7. 12 SAT <br/>
-                        광화문 광장 놀이마당 일대
+                        세종문화회관 1층 라운지 일대
+                        세종충무공 이야기공간 일대 (지하 1층)
                     </div>
                 </div>
             </div>

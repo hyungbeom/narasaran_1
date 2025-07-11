@@ -36,7 +36,8 @@ export default function Schedule() {
                     }}>
                         2025. 7. 12 SAT
                         <br/>
-                        광화문 광장 놀이마당 일대(세종대왕상 앞)
+                        세종문화회관 1층 라운지 일대
+                        세종충무공 이야기공간 일대 (지하 1층)
                     </div>
                 </div>
             </div>
