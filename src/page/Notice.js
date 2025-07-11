@@ -29,7 +29,7 @@ export default function Notice() {
                 </div>
                 <div style={{padding: isMobile ? '100px 20px' : '120px 60px'}}>
                     <div style={{fontSize: isMobile ? 35 : (isDesktop ? 50 : 45), fontWeight: 800}}>공지사항</div>
-                    <div style={ㄱ
+                    <div style={{
                         paddingTop: isMobile ? 10 : 20,
                         fontSize: isMobile ? 15 : (isDesktop ? 20 : 17),
                         lineHeight: 1.5
@@ -74,13 +74,13 @@ export default function Notice() {
 
             <div style={{width: '100%', maxWidth: 1000, paddingLeft: isDesktop ? 45 : 0, paddingBottom: 50, margin : '0px auto'}}>
 
-                <div style={{maxWidth: 1000, border: '1px solid lightGray', textAlign: 'center', padding: 0}}>
+                <div style={{maxWidth: 1000, border: '1px solid lightGray', textAlign: 'center', padding: '50px 20px'}}>
                     <div style={{fontSize: 20, fontWeight: 800}}>
                         광복 80주년 기념 「나라사랑 어린이·청소년 아트 페스티벌」에 신청해 주셔서 감사합니다
                     </div>
 
                     <div style={{fontSize: 20, fontWeight: 800, paddingTop: 10}}>
-                        당일 폭염이 예상됨에 따라, 참가 아동의 안전을 고려해 행사 운영 시간과 사생대회 장소가 아래와 같이 변경되었으니 꼭 확인해 주세요!
+                        당일 폭염이 예상됨에 따라, 참가 아동의 안전을 고려해 <br/> 행사 운영 시간과 사생대회 장소가 아래와 같이 변경되었으니 꼭 확인해 주세요!
                     </div>
 
 
