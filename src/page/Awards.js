@@ -39,7 +39,7 @@ export default function Awards() {
             "email": "soohdlwl@naver.com"
         },
         {
-            "awards":"대상",
+            "awards": "대상",
             "part": "초등부",
             "name": "문민준",
             "product": "광복 이제 우주에서도…",
@@ -72,7 +72,7 @@ export default function Awards() {
             "email": "kim_sanghee@naver.com"
         },
         {
-            "awards":  "금상",
+            "awards": "금상",
             "part": "초등부",
             "name": "최단비",
             "product": "한글 탈춤",
@@ -83,7 +83,7 @@ export default function Awards() {
             "email": "dhs511@nate.com"
         },
         {
-            "awards":  "금상",
+            "awards": "금상",
             "part": "초등부",
             "name": "황준엽",
             "product": "미래에서 온 거북선",
@@ -94,7 +94,7 @@ export default function Awards() {
             "email": "luck8265@naver.com"
         },
         {
-            "awards":  "금상",
+            "awards": "금상",
             "part": "초등부",
             "name": "전지윤",
             "product": "모두가 화합하는 미래 우리나라",
@@ -182,7 +182,7 @@ export default function Awards() {
             "email": "eun8757@naver.com"
         },
         {
-            "awards":"은상",
+            "awards": "은상",
             "part": "초등부",
             "name": "루이스레이나",
             "product": "우리가 만드는 대한민국",
@@ -777,20 +777,18 @@ export default function Awards() {
                                     placeHolder={'010'}
                                     style={{flex: 1, boxSizing: 'border-box', fontSize: isMobile ? 13 : 18}}
                                 />
-                                <InputNumber
+                                <Input
                                     value={numb2}
-                                    type={'number'}
                                     onChange={e => {
-                                        setNumb2(e)
+                                        setNumb2(e.target.value)
                                     }}
                                     size={isMobile ? 'middle' : 'large'}
                                     style={{flex: 1, boxSizing: 'border-box', fontSize: isMobile ? 13 : 18}}
                                 />
-                                <InputNumber
+                                <Input
                                     value={numb3}
-                                    type={'number'}
                                     onChange={e => {
-                                        setNumb3(e)
+                                        setNumb3(e.target.value)
                                     }}
                                     size={isMobile ? 'middle' : 'large'}
                                     style={{flex: 1, boxSizing: 'border-box', fontSize: isMobile ? 13 : 18}}
@@ -822,17 +820,26 @@ export default function Awards() {
                 <>
                     {result.length === 0 ?
 
-                        <div style={{textAlign : 'center'}}>
-                            <div style={{fontSize: 22, fontWeight : 800, paddingTop : 40}}>🎨 참여에 감사드립니다</div>
-                            <div style={{paddingTop : 50}}>수상은 되지 않았지만</div>
-                            <div style={{paddingTop : 10}}>여러분의 그림 하나하나에 담긴</div>
-                            <div style={{paddingTop : 10}}>마음과 노력은 정말 소중했습니다.</div>
-                            <div style={{paddingTop : 10, paddingBottom : 250}}>함께해 주셔서 감사합니다! 🇰🇷</div>
+                        <div style={{textAlign: 'center'}}>
+                            <div style={{fontSize: 22, fontWeight: 800, paddingTop: 40}}>🎨 참여에 감사드립니다</div>
+                            <div style={{paddingTop: 50}}>수상은 되지 않았지만</div>
+                            <div style={{paddingTop: 10}}>여러분의 그림 하나하나에 담긴</div>
+                            <div style={{paddingTop: 10}}>마음과 노력은 정말 소중했습니다.</div>
+                            <div style={{paddingTop: 10, paddingBottom: 250}}>함께해 주셔서 감사합니다! 🇰🇷</div>
 
 
                         </div>
                         :
-                        <div>asdf</div>
+                        <div style={{textAlign: 'center'}}>
+
+                            <div style={{fontSize: 22, fontWeight: 800, paddingTop: 30}}> 축하합니다!</div>
+                            <div style={{paddingTop: 10}}> 참가자분께서는 『광복 80주년 나라사랑 어린이 아트 페스티벌』</div>
+                            <div style={{paddingTop: 10}}> {result[0]?.awards} 수상자로 선정되셨습니다.</div>
+                            <div style={{paddingTop: 10}}> 예술적 감성과 창의력을 담은 훌륭한 작품을 통해</div>
+                            <div style={{paddingTop: 10}}> 우리 모두에게 깊은 감동을 선사해 주었습니다.</div>
+                            <div style={{paddingTop: 10, paddingBottom : 100}}> 진심으로 축하드리며, 앞으로의 멋진 성장과 활약을 응원합니다!</div>
+
+                        </div>
                     }
 
                 </>}
