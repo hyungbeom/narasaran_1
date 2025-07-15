@@ -14,6 +14,7 @@ import Exhibition from "./page/Exhibition";
 import Board from "./page/Board";
 import BroadCast from "./page/BroadCast";
 import Notice from "./page/Notice";
+import AwardsDetail from "./page/AwardsDetail";
 
 export default function App() {
     return (
@@ -30,6 +31,7 @@ export default function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/map" element={<Maps />} />
                 <Route path="/awards" element={<Awards />} />
+                <Route path="/awards/:id" element={<AwardsDetail />} />
                 <Route path="/exhibition" element={<Exhibition />} />
                 <Route path="/guidelines" element={<Photo />} />
                 <Route path="/review" element={<Review />} />
