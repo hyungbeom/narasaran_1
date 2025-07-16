@@ -501,7 +501,7 @@ export default function Awards() {
             "email": "jojiyoung86@naver.com"
         },
         {
-            "awards": "",
+            "awards": "동상",
             "part": "초등부",
             "name": "유호준",
             "product": "미래의 나라사랑 가득한 광화문",
