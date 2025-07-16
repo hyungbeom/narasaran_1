@@ -4,9 +4,10 @@ import Observer from "../components/Observer";
 import Sub1 from "../components/Sub1";
 import Sub2 from "../components/Sub2";
 import Sub3 from "../components/Sub3";
+import Sub4 from "../components/Sub4";
 
 
-const PAGES = [Sub1, Sub2, Sub3];
+const PAGES = [Sub1, Sub2, Sub4,Sub3];
 const POPUP_HIDE_KEY = 'hidePopupUntil';
 
 // 간단한 UA 기반 데스크탑 감지 함수

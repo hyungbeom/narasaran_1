@@ -96,7 +96,7 @@ export default function Header() {
                             서울국제어린이청소년아트페어
                         </div>
                         <div style={{fontSize: 8, fontWeight: 600, letterSpacing: -0.38}}>
-                           SEOUL INTERNATIONAL KIDS&YOUTH
+                           SEOUL INTERNATIONAL KIDS&YOUTH ARTS FAIR
                         </div>
                    </span>
                 </div>
