@@ -23,7 +23,7 @@ export default function Sidebar({open, setOpen}) {
             ],
         },
         {
-            title: '공모전 안내',
+            title: '공모전 신청',
             subMenu: [
                 {title: 'SIKAF 2025', link: '/exhibition'},
                 {title: '수상작 발표 2025', link: '/awards'},
